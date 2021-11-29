@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* ---- GENERAL ---- */
+
+html,
+body,
+div {
+    padding: 0em;
+    margin: 0em;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    -webkit-print-color-adjust: exact !important;
+    /* to enable background printing in Chrome*/
+}
+
+.bodyContainer {
+    min-height: calc(100vh - 90px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 90px 0px 0px 0px;
+    padding: 0px 0px 90px 0px;
+}
+
+.primaryColor {
+    color: #26415E;
+}
+
+.secondaryColor {
+    color: #375C83;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.underlineText {
+    text-decoration: underline !important;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.avoidWrap {
+    display: inline-block;
+}
+
+.justifyContent-center {
+    display: flex !important;
+    justify-content: center;
+}
+
+.alignItems-center {
+    display: flex !important;
+    align-items: center;
+}
+
+.noMargin {
+    margin: 0px;
+}
+
+
+/* --- LINKS --- */
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Used in Header Tabs*/
+
+a.darkBlueLink,
+a.darkBlueLink:active {
+    color: #26415E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.darkBlueLink:hover {
+    color: #557AA1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Used in Resources Cards*/
+
+a.blue {
+    color: #557AA1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.blue:hover {
+    color: #26415E;
+    cursor: pointer;
+}
+
+a.inverted:hover {
+    color: #d9d9d9;
+    cursor: pointer;
+}

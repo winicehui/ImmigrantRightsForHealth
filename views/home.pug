@@ -1,0 +1,61 @@
+extends layout
+
+block content
+  .landingPic
+    img(src='/images/landingpage/landingpage.jpg').landingPic_picture
+    .landingPic_text
+      h1.boldText.landingPic_title IMMIGRANT RIGHTS 
+        span.avoidWrap FOR HEALTH
+      p.landingPic_description 
+        | This website provides updated and accurate resources for seeking healthcare in New York State stratified by legal immigration status. Information provided here is useful for migrant patients as well as their healthcare providers.
+      a(href="/resources").ui.button.primary.landingPic_button Search Resources
+    img(src='/images/landingpage/landingpage_wave1.svg').landingPic_wave
+  .aboutUs
+    .aboutUs_text
+      h1.boldText About Us
+      .ui.grid.stackable.two.column.aboutUs_banner
+        .column
+          p We are an interdisciplinary group of medical, digital, and social science researchers and immigration lawyers.
+        .column 
+          p Our work is primarily focused on identifying healthcare barriers faced by migrant populations and developing solutions to facilitate healthcare access and engagement.
+  .ourPurpose 
+    .ourPurpose_text 
+      h1.boldText Our purpose 
+      .ui.grid.stackable.two.column.ourPurpose_banner
+        .column.ten.wide 
+          p Rights4Health is a website containing accurate and updated information about the benefits that are available for migrants and for which they are eligible for based on their immigration status.
+        .column.six.wide.justifyContent-center 
+          img(src='/images/landingpage/landingpage_icon1.svg')
+  img(src='/images/landingpage/landingpage_wave2.svg').affiliations_wave
+  .affiliations 
+    .affiliations_text 
+      h1.boldText Affiliations 
+      .ui.grid.stackable.two.column.top.aligned.affiliations_banner
+        each affiliation in affiliationsInformation
+          .column.eight.wide
+            .ui.grid.stackable.two.column
+              .column.three.wide.justifyContent-center 
+                img(src=affiliation["icon_src"]).affiliations_icon
+              .column.thirteen.wide 
+                p 
+                  span.boldText #{affiliation["bold_text"]} 
+                  | #{affiliation["description"]}
+  img(src='/images/landingpage/landingpage_wave3.svg').faqs_wave
+  .faqs
+    .faqs_text
+      h1.boldText Frequently Asked Questions 
+      .ui.grid.stackable.two.column.faqs_banner
+        each faqs_section in faqsInformation
+          .column
+            a.ui.card.fluid.centered(href=faqs_section["link"])
+              .meta.center.aligned.faqs_card_content
+                img(src=faqs_section["icon_src"]).faqs_card_icon
+                h1 #{faqs_section["card_title"]}
+            each sublink_link, sublink_text in faqs_section["sub_links"]
+              a.faqs_link(href=sublink_link)
+                p #{sublink_text}
+                svg(width="35px", height="35px", viewBox="0 0 32 32", fill="none") 
+                  path(d="M10.3279 26.3453C9.93045 25.9557 9.89432 25.346 10.2195 24.9164L10.3279 24.7933L19.2979 16L10.3279 7.20674C9.93045 6.81714 9.89432 6.20748 10.2195 5.77787L10.3279 5.65479C10.7253 5.26519 11.3472 5.22978 11.7854 5.54854L11.9109 5.65479L21.6721 15.2241C22.0695 15.6137 22.1057 16.2233 21.7805 16.6529L21.6721 16.776L11.9109 26.3453C11.4738 26.7738 10.765 26.7738 10.3279 26.3453Z" fill="white")
+
+block styles 
+  link(rel='stylesheet', href='/css/home.css')

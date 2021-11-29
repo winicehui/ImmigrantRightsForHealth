@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    .QandA
+        .ui.grid.stackable.two.column
+            .column.twelve.wide.alignItems-center
+                h1.boldText Questions and Answers
+            .column.four.wide.alignItems-center
+                p Share Page | 
+                    a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page 
+        each content, topic in pregnancyQandAInfo
+            .topic 
+                h3.topic_title #{topic}
+                each QandA in content 
+                    .QandA_div
+                        p.boldText.QandA_text.question #{QandA["question"]}
+                        p.QandA_text #{QandA["answer"]}
+    
+block styles 
+    link(rel='stylesheet', href='/css/QandA.css')
+
+block scripts 
+    script. 
+        function onPrint(){
+            window.print();
+        }

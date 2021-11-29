@@ -1,0 +1,321 @@
+/* Landing picture CSS Definitions*/
+
+.landingPic {
+    position: relative;
+    overflow: hidden;
+    background-color: #313E46;
+    justify-content: center;
+    align-content: center;
+    /* background-image: (url('../public/bg-img.png'); */
+}
+
+.landingPic_picture {
+    width: 100%;
+    opacity: 0.35;
+    object-fit: cover;
+    object-position: 70%;
+    height: 800px;
+}
+
+.landingPic_text {
+    position: absolute;
+    top: 13%;
+    left: 8%;
+    width: 84%;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.landingPic_title {
+    font-size: 54px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.landingPic_description {
+    width: 50%;
+    margin: 20px 0px;
+    font-size: 22px;
+    line-height: 45px;
+}
+
+.landingPic_button {
+    background-color: #375C83 !important;
+    font-family: inherit !important;
+    font-weight: 400 !important;
+    font-size: 22px !important;
+    margin: 10px 0px;
+}
+
+.landingPic_button:hover {
+    filter: brightness(115%);
+}
+
+.landingPic_button:active {
+    filter: brightness(95%);
+}
+
+.landingPic_wave {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+
+/* Blue Banner ("About Us") CSS Definitions*/
+
+.aboutUs {
+    width: 100%;
+    background-color: #26415E !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0rem 5rem 0rem;
+}
+
+.aboutUs_text {
+    width: 60%;
+    background-color: initial;
+}
+
+.aboutUs_banner>.column {
+    background-color: #26415E;
+}
+
+.aboutUs_banner>.column>p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+/* White Banner ("Our Purpose") CSS Definitions*/
+
+.ourPurpose {
+    width: 100%;
+    background-color: #FFFFFF !important;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0rem;
+}
+
+.ourPurpose_text {
+    width: 60%;
+    background-color: initial;
+}
+
+.ourPurpose_banner>.column {
+    background-color: #FFFFFF;
+}
+
+.ourPurpose_banner>.column>p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+/* Light Blue Banner ("Affiliations") CSS Definitions*/
+
+.affiliations_wave {
+    width: 100%;
+    display: block;
+    background-color: #FFFFFF;
+}
+
+.affiliations {
+    width: 100%;
+    background-color: rgba(229, 243, 242, 0.5);
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0rem 5rem 0rem;
+}
+
+.affiliations_text {
+    width: 70%;
+    background-color: initial;
+}
+
+.affiliations_banner {
+    background-color: initial;
+}
+
+.affiliations_banner>.column,
+.affiliations_banner>.column>.ui.grid>.column {
+    background-color: rgba(229, 243, 242, 0.5);
+}
+
+.affiliations_banner>.column>.ui.grid>.column>p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.affiliations_icon {
+    margin: 10px 0px;
+    width: 51px;
+    height: 51px;
+}
+
+
+/* Medium Blue Banner ("FAQs") CSS Definitions*/
+
+.faqs_wave {
+    width: 100%;
+    display: block;
+    background-color: rgba(229, 243, 242, 0.5);
+}
+
+.faqs {
+    width: 100%;
+    background-color: #375C83;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0rem;
+}
+
+.faqs_text {
+    width: 60%;
+    background-color: initial;
+}
+
+.faqs_banner>.column {
+    background-color: #375C83;
+}
+
+.faqs_banner>.column>p {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.faqs_card_content {
+    padding-top: 3em;
+    padding-bottom: 2em;
+    background: #ffffff;
+}
+
+.faqs_card_content:hover {
+    background: #f2f2f2;
+}
+
+.faqs_card_content>h1 {
+    color: #375C83;
+    font-weight: bold;
+}
+
+.faqs_card_icon {
+    width: 71px;
+    height: 71px;
+}
+
+a.faqs_link {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.faqs_link>p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0px;
+    line-height: inherit;
+}
+
+a.faqs_link svg {
+    margin: 2.5px;
+}
+
+a.faqs_link:hover svg path,
+a.faqs_link:hover {
+    color: #d9d9d9;
+    fill: #d9d9d9;
+}
+
+
+/* CSS Media Queries for responsiveness */
+
+@media only screen and (max-width: 810px) {
+    .landingPic_title {
+        font-size: 50px;
+    }
+    .landingPic_description {
+        font-size: 22px;
+        line-height: 40px;
+        width: 60%;
+    }
+    .landingPic_button {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .landingPic_title {
+        font-size: 48px;
+    }
+    .landingPic_description {
+        line-height: 38px;
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 563px) {
+    .landingpPic_title {
+        font-size: 46px;
+    }
+    .landingPic_description {
+        line-height: 36px;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .landingPic_description {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    .landingpic_description {
+        line-height: 34px;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 401px) {
+    .landingPic_description {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    .landingPic_text {
+        top: 10%;
+    }
+    .landingPic_description {
+        line-height: 34px;
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .landingPic_title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 307px) {
+    .landingPic_title {
+        font-size: 36px;
+    }
+    .landingPic_description {
+        line-height: 30px;
+        font-size: 20px;
+        width: 90%;
+    }
+}

@@ -1,0 +1,16 @@
+.ui.borderless.fixed.menu.Header
+  a(href='/')
+    img(src='/images/logo.svg')#logo
+  ul.headerList
+    each headerLink, headerTitle in headerInfo
+      li.headerListItems
+        a(href=headerLink).darkBlueLink
+          h4 #{headerTitle}
+    li.headerIcon
+      .ui.dropdown.floating.icon.button.large
+        i.bars.icon
+        .menu
+          each headerLink, headerTitle in headerInfo 
+            .item
+              a(href=headerLink)
+                h5.primaryColor #{headerTitle}

@@ -1,0 +1,34 @@
+.resources {
+    width: 75%;
+    margin: 6rem 0rem;
+    font-size: 1.3em;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section_title {
+    color: #26415E;
+    font-size: 22px;
+    font-weight: bold;
+    /* margin: 10px 0px; */
+    margin: 8px 0px 8px -20px;
+    padding: 5px 10px;
+    background: rgba(229, 243, 242);
+}
+
+.ui.card {
+    word-wrap: break-word;
+}
+
+.subsection_title {
+    font-size: 18px;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    /* padding: 20px !important; */
+}
+
+.addBottomMargin {
+    margin-bottom: 10px;
+}

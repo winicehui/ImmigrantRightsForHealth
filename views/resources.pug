@@ -1,0 +1,40 @@
+extends layout
+
+block content
+    .resources
+        .ui.grid.stackable 
+            .column.four.wide.stretched 
+                .ui.menu.fluid.stackable.vertical.tabular
+                    each sectionTitle in sectionTitles 
+                        .section 
+                            h3.section_title 
+                                span #{sectionTitle.toUpperCase()}
+                            - var sub_sections = resourcesInfo.filter(sub_section => {return sub_section.section===sectionTitle})
+                            each sub_section in sub_sections
+                                .item.link(value=sub_section["value"])(class={ active: sub_section["value"]===activeSubsection }).subsection_title(onClick='clickSubsection("'+sub_section["value"]+'")')
+                                    | #{sub_section["title"]}
+            .column.twelve.wide
+                -var active_subsection_resources = resourcesInfo.find(sub_section => { return sub_section.value === activeSubsection})["content"]
+                - var language_colortags = { 'English': 'blue', 'Spanish': 'orange', 'Chinese': 'red', 'Vietnamese': 'purple'}
+                .ui.grid.stackable.two.column
+                    each resource in active_subsection_resources
+                        .column
+                            .ui.card.fluid
+                                .content
+                                    .header #{resource["title"]}
+                                    .description
+                                        a.blue(href=resource["url"], target="_blank") #{resource["url"]}
+                                .content
+                                    if resource["description"]
+                                        .description.addBottomMargin #{resource["description"]}
+                                    each language in resource["languages"]
+                                        .ui.label(class=language_colortags[language]) #{language}
+
+block styles 
+    link(rel='stylesheet', href='/css/resources.css')
+
+block scripts
+    script. 
+        function clickSubsection(value){
+            window.location.href=`/resources/${value}`;
+        }

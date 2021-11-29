@@ -1,0 +1,30 @@
+.QandA {
+    width: 75%;
+    margin: 6rem 0rem;
+    font-size: 1.3em;
+}
+
+.topic {
+    margin: 80px 0px;
+}
+
+.topic_title {
+    color: #375C83;
+    text-align: center;
+    margin: 25px;
+    font-weight: bold;
+}
+
+.QandA_div {
+    margin-bottom: 35px;
+}
+
+.QandA_text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.question {
+    margin: 5px 0px;
+}

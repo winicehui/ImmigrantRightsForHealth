@@ -1,0 +1,50 @@
+{
+    "affiliationsInformation": [
+        {
+            "icon_src": "/images/landingpage/landingpage_icon2.png",
+            "icon_alt_text": "An icon of a medical doctor's hand",
+            "bold_text": "Our medical research group",
+            "description": " is housed in the Human Rights Lab, Department of Anesthesiology, Weill Cornell Medicine, New York, NY."
+        },
+        {
+            "icon_src": "/images/landingpage/landingpage_icon3.png",
+            "icon_alt_text": "A icon of a search glass",
+            "bold_text": "Our digital research group",
+            "description": " is housed in the Cornell Social Media Lab, Department of Communication, Cornell University, Ithaca, NY."
+        },
+        {
+            "icon_src": "/images/landingpage/landingpage_icon4.png",
+            "icon_alt_text": "A icon of a justice balance",
+            "bold_text": "Our immigration law group",
+            "description": " is housed in Cornell Law School, Cornell University, Ithaca, NY."
+        },
+        {
+            "icon_src": "/images/landingpage/landingpage_icon5.png",
+            "icon_alt_text": "A icon of a justice balance",
+            "bold_text": "Our social science group",
+            "description": " is housed in the Cornell Social Media Lab, Bronfenbrenner Center for Translational Research & ACT for Youth Center for Community Action, Cornell University, Ithaca, NY."
+        }
+    ],
+    "faqsInformation": [
+        {
+            "card_title": "Legal",
+            "icon_src": "/images/landingpage/landingpage_icon6.svg",
+            "icon_alt_text": "A icon of a justice balance",
+            "link": "/QandA",
+            "sub_links": {
+                "Help with public charge": "/QandA",
+                "Viewing green card status": "/QandA"
+            }
+        },
+        {
+            "card_title": "Healthcare",
+            "icon_src": "/images/landingpage/landingpage_icon7.svg",
+            "icon_alt_text": "A healthcare icon",
+            "link": "/QandA",
+            "sub_links": {
+                "Getting advice on pregnancy": "/QandA",
+                "View healthcare options": "/QandA"
+            }
+        }
+    ]
+}
