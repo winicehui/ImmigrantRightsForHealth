@@ -204,7 +204,7 @@ app.get('/QandA/:sectionValue?', async function(req, res) {
 
     const activeSubsection = req.params.sectionValue || 'pregnancy_planning';
 
-    res.render('QandA2', {
+    res.render('QandA_v2', {
         title: 'Questions and Answers',
         headerInfo,
         sectionTitles,
