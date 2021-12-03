@@ -1,0 +1,50 @@
+.QandA {
+    width: 75%;
+    margin: 6rem 0rem;
+    font-size: 1.3em;
+}
+
+.section_title {
+    color: #26415E;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin: 0px;
+    background-color: #f2f2f2;
+}
+
+.subsection_title {
+    font-size: 18px;
+    line-height: 1.2em;
+    padding: 15px 25px;
+    word-wrap: break-word;
+    color: black;
+}
+
+.subsection_link.active {
+    color: #298FFB;
+}
+
+.subsection_link:hover {
+    color: #298FFB;
+}
+
+.topic_title {
+    color: #375C83;
+    /* text-align: center; */
+    /* margin: 25px; */
+    font-weight: bold;
+}
+
+.title {
+    font-size: 20px !important;
+    line-height: 30px;
+    color: #333333;
+}
+
+.content {
+    color: #375C83;
+    font-size: 20px !important;
+    line-height: 30px;
+    font-weight: 600;
+}

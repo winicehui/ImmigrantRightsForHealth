@@ -1,0 +1,38 @@
+[{
+        "title": "Pregnancy Planning",
+        "value": "pregnancy_planning",
+        "section": "Pregnancy",
+        "content": [{
+                "question": "Will enrolling in Medicaid while pregnant impact my future opportunities for residency or citizenship?",
+                "answer": "Enrolling in federally funded Medicaid, other than support for long term institutional care is not a factor when considering whether a person is likely to become a public charge, and thus will not impact future opportunities for residency or citizenship."
+            },
+            {
+                "question": "If I am undocumented, am I eligible for insurance coverage for prenatal care?",
+                "answer": "Undocumented immigrants are not eligible for health insurance coverage, but prenatal care may be available, depending on state programs. In New York State, undocumented immigrants are eligible for Medicaid coverage for the care and services required for the treatment of medical emergencies. Women with a medically verified pregnancy are eligible for Medicaid coverage throughout the period of their pregnancy regardless of their immigration status and are not required to provide documentation of immigration status through the last day of the month in which the 60-day post-partum period ends. This coverage includes prenatal and limited postpartum care."
+            }
+        ]
+    },
+    {
+        "title": "Care During Pregnancy",
+        "value": "care_during_pregnancy",
+        "section": "Pregnancy",
+        "content": [{
+            "question": "If no one on my delivery team speaks my native language, how can I ensure there will be a translator present?",
+            "answer": "According to Title VI of the Civil Rights Act of 1965, health entities that receive federal funding must provide interpretation and translation of materials to individuals who have difficulty understanding English."
+        }]
+    },
+    {
+        "title": "Post-Pregnancy Care",
+        "value": "post_pregnancy_care",
+        "section": "Pregnancy",
+        "content": [{
+                "question": "If I am undocumented, am I eligible to receive health insurance coverage for postpartum care?",
+                "answer": "Coverage for postpartum care varies by state. In New York, postpartum care is available through Medicaid coverage and through the Family Planning Extension Program, regardless of immigration status."
+            },
+            {
+                "question": "Can my spouse or civil partner, dependent children under 18, or long-term partner who remained in my home country when I left apply for permission to enter the US under family reunion provisions?",
+                "answer": "Depending on the immigration status of the mother, immediate family members of hers can apply for permission to enter the US. However, the child's citizenship status will not enable additional family members to apply for family reunification, since the citizen must be older than 21 to sponsor a family member for a green card."
+            }
+        ]
+    }
+]

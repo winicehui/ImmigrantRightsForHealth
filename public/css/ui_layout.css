@@ -88,14 +88,14 @@ a:active {
 
 /* Used in Header Tabs*/
 
-a.darkBlueLink,
-a.darkBlueLink:active {
+a.darkBlueLink {
     color: #26415E;
     text-decoration: none;
     cursor: pointer;
 }
 
-a.darkBlueLink:hover {
+a.darkBlueLink:hover,
+a.darkBlueLink:active {
     color: #557AA1;
     text-decoration: none;
     cursor: pointer;

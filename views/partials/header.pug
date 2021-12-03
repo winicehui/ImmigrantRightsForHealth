@@ -11,6 +11,12 @@
         i.bars.icon
         .menu
           each headerLink, headerTitle in headerInfo 
-            .item
-              a(href=headerLink)
-                h5.primaryColor #{headerTitle}
+            a(href=headerLink).item
+              h5.primaryColor #{headerTitle}
+
+script. 
+  $(window).on("load", function() {
+    let pathArray = window.location.pathname.split('/');
+    const activeheaderLink = "/" + (pathArray[1] || 'home')
+    $('a[href*="'+activeheaderLink+'"]').addClass('active');
+  });

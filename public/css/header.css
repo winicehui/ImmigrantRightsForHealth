@@ -18,7 +18,7 @@
     padding: 0px;
     margin: 0px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
 }
@@ -29,6 +29,10 @@
 
 .headerListItems>a>h4 {
     font-size: 19px;
+}
+
+.headerListItems>a.active>h4 {
+    color: #557AA1 !important;
 }
 
 .headerIcon {
@@ -66,8 +70,5 @@
         transition: 0.8s all ease;
         display: inline;
         /** to hide/show the navbar icon**/
-    }
-    .headerList {
-        justify-content: flex-end;
     }
 }

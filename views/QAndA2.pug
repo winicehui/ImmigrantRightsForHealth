@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    .QandA
+        .ui.grid.stackable.two.column
+            .column.twelve.wide.alignItems-center
+                h2.boldText Questions and Answers
+            .column.four.wide.alignItems-center
+                p Share Page | 
+                    a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page 
+        - var activeSubsectionObject = pregnancyQandAInfo.find(sub_section => {return sub_section.value===activeSubsection})
+        .ui.grid.stackable 
+            .column.four.wide 
+                .ui.menu.fluid.stackable.vertical
+                    each sectionTitle in sectionTitles 
+                        .section
+                            h3.section_title 
+                                | #{sectionTitle.toUpperCase()}
+                            - var sub_sections = pregnancyQandAInfo.filter(sub_section => {return sub_section.section===sectionTitle})
+                            each sub_section in sub_sections
+                                - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
+                                a(href="/QandA/"+sub_section["value"])
+                                    p.subsection_title.subsection_link(class={active: isActiveSubSection}) 
+                                        | #{sub_section["title"]}
+            .column.twelve.wide
+                h3.boldText.topic_title #{activeSubsectionObject["title"]}
+                .ui.accordion
+                    each QandA in activeSubsectionObject["content"]
+                        .title
+                            i.dropdown.icon
+                            | #{QandA["question"]}
+                        .content 
+                            | #{QandA["answer"]}
+                        .ui.divider
+                        //- .QandA_div
+                        //-     p.boldText.QandA_text.question #{QandA["question"]}
+                        //-     p.QandA_text #{QandA["answer"]}
+    
+block styles 
+    link(rel='stylesheet', href='/css/QandA2.css')
+
+block scripts 
+    script. 
+        function onPrint(){
+            window.print();
+        }

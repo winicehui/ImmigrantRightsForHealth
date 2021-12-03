@@ -1,18 +1,29 @@
 .footer {
+    position: absolute;
+    bottom: 0;
     height: 90px;
     width: 100%;
+    padding: 0 30px;
     background-color: #26415E;
     color: white;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    align-content: center;
-    padding: 0 30px;
-    position: absolute;
-    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    text-align: end;
 }
 
 .footer>p {
-    font-size: 20px;
-    float: right;
+    margin: 0px;
+    font-size: 19px;
+    line-height: 1.5em;
+}
+
+.emailLink {
+    text-decoration: underline;
+}
+
+.emailLink:hover {
+    color: #298FFB;
 }

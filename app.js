@@ -69,37 +69,37 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 // Compresses all responses: Compression decreases the downloadable amount of data that is served to users. Through the use of compression, we can improve the performance of the Node.js application as our payload size is reduced drastically.
-app.use(compression());  
+app.use(compression());
 // https://www.npmjs.com/package/node-sass-middleware Put JS, CSS, HTML files below the public directory, and they will be compressed.
 app.use(sass({
-  src: path.join(__dirname, 'public'),
-  dest: path.join(__dirname, 'public')
-})); 
+    src: path.join(__dirname, 'public'),
+    dest: path.join(__dirname, 'public')
+}));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // Define our session.
 app.use(session({
-  resave: true,
-  saveUninitialized: true,
-  secret: process.env.SESSION_SECRET,
-  cookie: { maxAge: 1209600000 }, // two weeks in milliseconds
-  // store: new MongoStore({
-  //   url: process.env.MONGODB_URI,
-  //   autoReconnect: true,
-  // })
+    resave: true,
+    saveUninitialized: true,
+    secret: process.env.SESSION_SECRET,
+    cookie: { maxAge: 1209600000 }, // two weeks in milliseconds
+    // store: new MongoStore({
+    //   url: process.env.MONGODB_URI,
+    //   autoReconnect: true,
+    // })
 }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
 app.use((req, res, next) => {
-  if (req.path === '/api/upload') {
-    // Multer multipart/form-data handling needs to occur before the Lusca CSRF check.
-    next();
-  } else {
-    lusca.csrf()(req, res, next);
-  }
+    if (req.path === '/api/upload') {
+        // Multer multipart/form-data handling needs to occur before the Lusca CSRF check.
+        next();
+    } else {
+        lusca.csrf()(req, res, next);
+    }
 });
 
 // security settings in our http header
@@ -143,97 +143,109 @@ app.use('/semantic', express.static(path.join(__dirname, 'semantic'), { maxAge: 
 
 // Main route is the landing page
 app.get('/', async function(req, res) {
-  let headerInfo;
-  const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
-  headerInfo = JSON.parse(headerData.toString()); 
+    let headerInfo;
+    const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
+    headerInfo = JSON.parse(headerData.toString());
 
-  let homeInfo;
-  const homeData = await fs.readFileAsync(`${__dirname}/public/json/homePageInfo.json`);
-  homeInfo = JSON.parse(homeData.toString());
+    let homeInfo;
+    const homeData = await fs.readFileAsync(`${__dirname}/public/json/homePageInfo.json`);
+    homeInfo = JSON.parse(homeData.toString());
 
-  res.render('home', {
-    title: 'Home', 
-    headerInfo,
-    affiliationsInformation: homeInfo["affiliationsInformation"],
-    faqsInformation: homeInfo["faqsInformation"]
-  });
+    res.render('home', {
+        title: 'Home',
+        headerInfo,
+        affiliationsInformation: homeInfo["affiliationsInformation"],
+        faqsInformation: homeInfo["faqsInformation"]
+    });
 });
 
 // route for resources
-app.get('/resources/:sectionValue?', async function(req, res){
-  let headerInfo;
-  const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
-  headerInfo = JSON.parse(headerData.toString()); 
+app.get('/resources/:sectionValue?', async function(req, res) {
+    let headerInfo;
+    const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
+    headerInfo = JSON.parse(headerData.toString());
 
-  let resourcesInfo;
-  const resourcesData = await fs.readFileSync(`${__dirname}/public/json/resourcesInfo.json`);
-  resourcesInfo = JSON.parse(resourcesData.toString());
+    let resourcesInfo;
+    const resourcesData = await fs.readFileSync(`${__dirname}/public/json/resourcesInfo.json`);
+    resourcesInfo = JSON.parse(resourcesData.toString());
 
-  const sectionTitles = [
-    'General',
-    'COVID-19'
-  ];
+    const sectionTitles = [
+        'General',
+        'COVID-19'
+    ];
 
-  // if sub_section is not defined, it is defaulted to the first subsection value
-  const activeSubsection = req.params.sectionValue || 'general_resources_for_immigrant_communities';
+    // if sub_section is not defined, it is defaulted to the first subsection value
+    const activeSubsection = req.params.sectionValue || 'general_resources_for_immigrant_communities';
 
-  res.render('resources', {
-    title: 'Resources',
-    headerInfo,
-    sectionTitles,
-    resourcesInfo, 
-    activeSubsection
-  });
+    res.render('resources3', {
+        title: 'Resources',
+        headerInfo,
+        sectionTitles,
+        resourcesInfo,
+        activeSubsection
+    });
 });
 
 // route for Questions and Answers
-app.get('/QandA', async function(req, res){
-  let headerInfo;
-  const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
-  headerInfo = JSON.parse(headerData.toString()); 
+app.get('/QandA/:sectionValue?', async function(req, res) {
+    let headerInfo;
+    const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
+    headerInfo = JSON.parse(headerData.toString());
 
-  let pregnancyQandAInfo;
-  const pregnancyQandAData = await fs.readFileAsync(`${__dirname}/public/json/pregnancyFAQInfo.json`);
-  pregnancyQandAInfo = JSON.parse(pregnancyQandAData.toString());
+    let pregnancyQandAInfo;
+    const pregnancyQandAData = await fs.readFileAsync(`${__dirname}/public/json/pregnancyFAQInfo2.json`);
+    pregnancyQandAInfo = JSON.parse(pregnancyQandAData.toString());
 
-  res.render('QandA', {
-    title: 'Questions and Answers',
-    headerInfo,
-    pregnancyQandAInfo
-  });
+    const sectionTitles = [
+        'Pregnancy',
+        'COVID-19',
+        'Public Charge'
+    ]
+
+    const activeSubsection = req.params.sectionValue || 'pregnancy_planning';
+
+    console.log(activeSubsection)
+
+    res.render('QandA2', {
+        title: 'Questions and Answers',
+        headerInfo,
+        sectionTitles,
+        pregnancyQandAInfo,
+        activeSubsection
+    });
 });
 
 // route for Team page
-app.get('/team', async function(req, res){
-  let headerInfo;
-  const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
-  headerInfo = JSON.parse(headerData.toString()); 
+app.get('/team', async function(req, res) {
+    let headerInfo;
+    const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
+    headerInfo = JSON.parse(headerData.toString());
 
-  res.render('team', {
-    title: 'Team',
-    headerInfo
-  });
+    res.render('team', {
+        title: 'Team',
+        headerInfo
+    });
 })
 
 /**
  * Error Handler.
  */
 if (process.env.NODE_ENV === 'development') {
-  // only use in development
-  app.use(errorHandler());
+    // only use in development
+    app.use(errorHandler());
 } else {
-  app.use((err, req, res, next) => {
-    console.error(err);
-    res.status(500).send('Server Error');
-  });
+    app.use((err, req, res, next) => {
+        console.error(err);
+        res.status(500).send('Server Error');
+    });
 }
 
 /**
  * Start Express server.
  */
 app.listen(app.get('port'), () => {
-  console.log('%s App is running at http://localhost:%d in %s mode', chalk.green('✓'), app.get('port'), app.get('env'));
-  console.log('  Press CTRL-C to stop\n');
+    console.log('%s App is running at http://localhost:%d in %s mode', chalk.green('✓'), app.get('port'), app.get('env'));
+    console.log('  Press CTRL-C to stop\n');
 });
 
 module.exports = app;

@@ -1,10 +1,8 @@
-[
-    {
+[{
         "title": "General Resources for Immigrant communities",
         "value": "general_resources_for_immigrant_communities",
         "section": "General",
-        "content": [
-            {
+        "content": [{
                 "title": "Immigrant Eligibility for Public Benefits in New York State",
                 "url": "https://empirejustice.org/resources_post/immigrant-eligibility-for-public-benefits/",
                 "description": "",
@@ -34,8 +32,7 @@
         "title": "Resources for Undocumented Immigrants",
         "value": "covid_resources_for_undocumented_immigrants",
         "section": "COVID-19",
-        "content": [
-            {
+        "content": [{
                 "title": "Tangible Support for Undocumented Communities",
                 "url": "https://immigrantsrising.org/resource/tangible-support-for-immigrant-communities-during-covid-19/",
                 "description": "List of compiled resources for undocumented individuals",
@@ -46,7 +43,7 @@
                 ]
             },
             {
-                "title": "Healthcare Access for Undocumented Immigrantss",
+                "title": "Healthcare Access for Undocumented Immigrants",
                 "url": "https://unitedwedream.org/2020/03/healthcare-access-for-undocumented-folks-in-the-time-of-covid19/",
                 "description": "Though undocumented individuals are typically not eligible for health insurance, there are many free/low-cost clinics that serve the uninsured.",
                 "languages": [
@@ -75,37 +72,10 @@
         "title": "Immigration Law",
         "value": "covid-19_and_immigration_law",
         "section": "COVID-19",
-        "content": [
-            {
-                "title": "USCIS COVID-19 Public Charge Notice",
-                "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/public-charge",
-                "description": "USCIS will not consider COVID-19 testing, treatment, or preventive care (including a vaccine if a vaccine becomes available) as part of a public charge inadmissibility determination, even if paid for by a public benefit like Medicaid.",
-                "languages": [
-                    "English",
-                    "Spanish"
-                ]
-            },
-            {
-                "title": "Public Charge FAQs COVID-19",
-                "url": "https://coronavirus.dc.gov/release/public-notice-public-charge-rule-faqs-covid-19-information",
-                "languages": [
-                    "English",
-                    "Spanish",
-                    "Chinese",
-                    "Vietnamese"
-                ]
-            },
-            {
+        "content": [{
                 "title": "Understanding the Impact of Key Provisions of COVID-19 Relief Bills on Immigrant Communities",
                 "url": "https://www.nilc.org/issues/economic-support/impact-of-covid19-relief-bills-on-immigrant-communities/",
                 "description": "\"The purpose of this policy brief is to provide information on the COVID-19 relief package's impact on low-income immigrants and suggestions for urgently needed improvements in any future relief bills, with a focus on health, public benefits, economic support, and employment protections. Please note that this is not meant to be a comprehensive analysis of the bill.\"",
-                "languages": [
-                    "English"
-                ]
-            },
-            {
-                "title": "COVID-19 Stimulus Package: What Care Act Rebates Mean for Immigrants",
-                "url": "http://www.wakeforestlawreview.com/2020/04/covid-19-stimulus-package-what-cares-act-rebates-mean-for-immigrants/",
                 "languages": [
                     "English"
                 ]
@@ -117,6 +87,32 @@
                 "languages": [
                     "English"
                 ]
+            },
+            {
+                "title": "USCIS COVID-19 Public Charge Notice",
+                "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/public-charge",
+                "description": "USCIS will not consider COVID-19 testing, treatment, or preventive care (including a vaccine if a vaccine becomes available) as part of a public charge inadmissibility determination, even if paid for by a public benefit like Medicaid.",
+                "languages": [
+                    "English",
+                    "Spanish"
+                ]
+            },
+            {
+                "title": "COVID-19 Stimulus Package: What Care Act Rebates Mean for Immigrants",
+                "url": "http://www.wakeforestlawreview.com/2020/04/covid-19-stimulus-package-what-cares-act-rebates-mean-for-immigrants/",
+                "languages": [
+                    "English"
+                ]
+            },
+            {
+                "title": "Public Charge FAQs COVID-19",
+                "url": "https://coronavirus.dc.gov/release/public-notice-public-charge-rule-faqs-covid-19-information",
+                "languages": [
+                    "English",
+                    "Spanish",
+                    "Chinese",
+                    "Vietnamese"
+                ]
             }
         ]
     },
@@ -124,23 +120,20 @@
         "title": "COVID-19 and Health Insurance",
         "value": "covid_19_and_health_insurance",
         "section": "COVID-19",
-        "content": [
-            {
-                "title": "How Uninsured Patients Can Get Help During the Covid-19 Pandemic",
-                "url": "https://www.pbs.org/newshour/health/how-uninsured-patients-can-get-help-during-covid-19-pandemic",
-                "description": "This article explains how states are expanding eligibility so they can temporarily insure more of their residents during the pandemic. Private insurance companies are also asking Congress to open up enrollment on the federal exchange.",
-                "languages": [
-                    "English"
-                ]
-            }
-        ]
+        "content": [{
+            "title": "How Uninsured Patients Can Get Help During the Covid-19 Pandemic",
+            "url": "https://www.pbs.org/newshour/health/how-uninsured-patients-can-get-help-during-covid-19-pandemic",
+            "description": "This article explains how states are expanding eligibility so they can temporarily insure more of their residents during the pandemic. Private insurance companies are also asking Congress to open up enrollment on the federal exchange.",
+            "languages": [
+                "English"
+            ]
+        }]
     },
     {
         "title": "COVID-19 and Domestic Workers",
         "value": "covid_19_and_domestic_workers",
         "section": "COVID-19",
-        "content": [
-            {
+        "content": [{
                 "title": "COVID-19 Related Resources for Domestic Workers",
                 "url": "https://membership.domesticworkers.org/coronavirus/",
                 "description": "COVID-19 Related Resources for Domestic Workers.",
@@ -149,17 +142,17 @@
                 ]
             },
             {
-                "title": "National Domestic Workers Alliance Resources",
-                "url": "https://domesticworkers.org/?fbclid=IwAR0dni3UgcCbjrBGbCYWJdSYBol15mgHOro",
-                "description": "The National Domestic Workers Alliance is providing emergency assistance for domestic workers that enables them to stay home and healthy.",
+                "title": "Fair Practices for Employers",
+                "url": "https://domesticemployers.org/support-during-the-coronavirus-pandemic/#resources-for-workers",
+                "description": "Fair Practices for Employers.",
                 "languages": [
                     "English"
                 ]
             },
             {
-                "title": "Fair Practices for Employers",
-                "url": "https://domesticemployers.org/support-during-the-coronavirus-pandemic/#resources-for-workers",
-                "description": "Fair Practices for Employers.",
+                "title": "National Domestic Workers Alliance Resources",
+                "url": "https://domesticworkers.org/?fbclid=IwAR0dni3UgcCbjrBGbCYWJdSYBol15mgHOro",
+                "description": "The National Domestic Workers Alliance is providing emergency assistance for domestic workers that enables them to stay home and healthy.",
                 "languages": [
                     "English"
                 ]

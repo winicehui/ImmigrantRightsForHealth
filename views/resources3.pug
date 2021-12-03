@@ -2,36 +2,40 @@ extends layout
 
 block content
     .resources
+        - var activeSubsectionObject = resourcesInfo.find(sub_section => {return sub_section.value===activeSubsection})
         .ui.grid.stackable 
-            .column.four.wide.stretched 
-                .ui.menu.fluid.stackable.vertical.tabular
+            .column.four.wide 
+                .ui.menu.fluid.stackable.vertical
                     each sectionTitle in sectionTitles 
-                        .section 
+                        .section
                             h3.section_title 
-                                span #{sectionTitle.toUpperCase()}
+                                | #{sectionTitle.toUpperCase()}
                             - var sub_sections = resourcesInfo.filter(sub_section => {return sub_section.section===sectionTitle})
                             each sub_section in sub_sections
-                                .item.link(value=sub_section["value"])(class={ active: sub_section["value"]===activeSubsection }).subsection_title(onClick='clickSubsection("'+sub_section["value"]+'")')
-                                    | #{sub_section["title"]}
+                                - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
+                                a(href="/resources/"+sub_section["value"])
+                                    p.subsection_title.subsection_link(class={active: isActiveSubSection}) 
+                                        | #{sub_section["title"]}
             .column.twelve.wide
-                -var active_subsection_resources = resourcesInfo.find(sub_section => { return sub_section.value === activeSubsection})["content"]
                 - var language_colortags = { 'English': 'blue', 'Spanish': 'orange', 'Chinese': 'red', 'Vietnamese': 'purple'}
+                h2.boldText #{activeSubsectionObject["title"]}
                 .ui.grid.stackable.two.column
-                    each resource in active_subsection_resources
+                    each resource in activeSubsectionObject["content"]
                         .column
                             .ui.fluid.card(href=resource["url"]).resourceCard
                                 .content
+                                    i.right.floated.icon(class="external alternate")
                                     .header #{resource["title"]}
                                     .description
                                         a.blue(href=resource["url"], target="_blank") #{resource["url"]}
-                                .content
+                                .content.extra
                                     if resource["description"]
                                         .description.addBottomMargin #{resource["description"]}
                                     each language in resource["languages"]
                                         .ui.label(class=language_colortags[language]) #{language}
 
 block styles 
-    link(rel='stylesheet', href='/css/resources.css')
+    link(rel='stylesheet', href='/css/resources3.css')
 
 block scripts
     script. 

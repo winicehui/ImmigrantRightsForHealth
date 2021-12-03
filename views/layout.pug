@@ -19,18 +19,18 @@ html
     block styles
 
   body
-    .bodyContainer
-      include partials/header
-      block content
-
-      include partials/footer
-
     //- script(src='/js/lib/jquery.min.js')
     script(src='/js/lib/jquery-3.1.1.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js', integrity='sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=', crossorigin='anonymous')
     //- script(src='/js/lib/popper.min.js')
     //- script(src='/js/lib/bootstrap.min.js')
     script(src='/js/main.js')
+    
+    .bodyContainer
+      include partials/header
+      block content
+
+      include partials/footer
 
     block scripts
     // Google Analytics: change UA-XXXXX-X to be your site's ID
@@ -44,4 +44,6 @@ html
     script.
       $(document).ready(function() {
         $('.ui.dropdown').dropdown();
+        $('.ui.accordion').accordion();
       });
+
