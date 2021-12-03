@@ -43,6 +43,15 @@
     transform: translateY(-5px);
 }
 
+.content.extra {
+    background-color: #f2f2f2 !important;
+}
+
+.icon {
+    width: 30px !important;
+    height: 30px !important;
+}
+
 .addBottomMargin {
     margin-bottom: 10px;
 }

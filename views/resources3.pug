@@ -3,7 +3,7 @@ extends layout
 block content
     .resources
         - var activeSubsectionObject = resourcesInfo.find(sub_section => {return sub_section.value===activeSubsection})
-        .ui.grid.stackable 
+        .ui.grid 
             .column.four.wide 
                 .ui.menu.fluid.stackable.vertical
                     each sectionTitle in sectionTitles 
@@ -26,11 +26,15 @@ block content
                                 .content
                                     i.right.floated.icon(class="external alternate")
                                     .header #{resource["title"]}
-                                    .description
-                                        a.blue(href=resource["url"], target="_blank") #{resource["url"]}
-                                .content.extra
-                                    if resource["description"]
+                                    //- .description
+                                
+                                if resource["description"]
+                                    .content
                                         .description.addBottomMargin #{resource["description"]}
+                                    //-     a.blue(href=resource["url"], target="_blank") #{resource["url"]}
+                                .content.extra
+                                    //- if resource["description"]
+                                    //-     .description.addBottomMargin #{resource["description"]}
                                     each language in resource["languages"]
                                         .ui.label(class=language_colortags[language]) #{language}
 
@@ -47,17 +51,17 @@ block scripts
             const redirectToURL = $(this)[0].getAttribute("href");
             window.open(redirectToURL,'_blank');
         })
-    script. 
-        $('.resourceCard').hover(
-            function(){
-                //- mouse over
-                $(this).css("background-color", "#f2f2f2");
-                $(this).find('.header').css("background-color", "#f2f2f2");
-                $(this).find('.description').css("background-color", "#f2f2f2");
-            }, 
-            function(){
-                //- mouse out 
-                $(this).css("background-color", "");
-                $(this).find('.header').css("background-color", "");
-                $(this).find('.description').css("background-color", "");
-            })
+    //- script. 
+    //-     $('.resourceCard').hover(
+    //-         function(){
+    //-             //- mouse over
+    //-             $(this).css("background-color", "#f2f2f2");
+    //-             $(this).find('.header').css("background-color", "#f2f2f2");
+    //-             $(this).find('.description').css("background-color", "#f2f2f2");
+    //-         }, 
+    //-         function(){
+    //-             //- mouse out 
+    //-             $(this).css("background-color", "");
+    //-             $(this).find('.header').css("background-color", "");
+    //-             $(this).find('.description').css("background-color", "");
+    //-         })
