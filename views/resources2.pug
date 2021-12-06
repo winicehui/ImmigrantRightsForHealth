@@ -13,7 +13,7 @@ block content
                             - var sub_sections = resourcesInfo.filter(sub_section => {return sub_section.section===sectionTitle})
                             each sub_section in sub_sections
                                 - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
-                                a(href="/resources/"+sub_section["value"])
+                                a(href="/resources2/"+sub_section["value"])
                                     p.subsection_title.subsection_link(class={active: isActiveSubSection}) #{sub_section["title"]}
             .column.twelve.wide
                 -var active_subsection_resources = resourcesInfo.find(sub_section => { return sub_section.value === activeSubsection})["content"]
@@ -39,7 +39,7 @@ block styles
 block scripts
     script. 
         function clickSubsection(value){
-            window.location.href=`/resources/${value}`;
+            window.location.href=`/resources2/${value}`;
         }
     script. 
         $('.resourceCard').on('click', function(){

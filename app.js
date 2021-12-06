@@ -186,6 +186,33 @@ app.get('/resources/:sectionValue?', async function(req, res) {
     });
 });
 
+// route for resources2
+app.get('/resources2/:sectionValue?', async function(req, res) {
+    let headerInfo;
+    const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
+    headerInfo = JSON.parse(headerData.toString());
+
+    let resourcesInfo;
+    const resourcesData = await fs.readFileSync(`${__dirname}/public/json/resourcesInfo.json`);
+    resourcesInfo = JSON.parse(resourcesData.toString());
+
+    const sectionTitles = [
+        'General',
+        'COVID-19'
+    ];
+
+    // if sub_section is not defined, it is defaulted to the first subsection value
+    const activeSubsection = req.params.sectionValue || 'general_resources_for_immigrant_communities';
+
+    res.render('resources2', {
+        title: 'Resources',
+        headerInfo,
+        sectionTitles,
+        resourcesInfo,
+        activeSubsection
+    });
+});
+
 // route for Questions and Answers
 app.get('/QandA/:sectionValue?', async function(req, res) {
     let headerInfo;
