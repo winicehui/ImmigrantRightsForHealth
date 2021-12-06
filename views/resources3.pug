@@ -3,19 +3,36 @@ extends layout
 block content
     .resources
         - var activeSubsectionObject = resourcesInfo.find(sub_section => {return sub_section.value===activeSubsection})
-        .ui.grid 
-            .column.four.wide 
-                .ui.menu.fluid.stackable.vertical
-                    each sectionTitle in sectionTitles 
-                        .section
-                            h3.section_title 
-                                | #{sectionTitle.toUpperCase()}
+        .ui.grid.centered 
+            .column.four.wide.sidebarMenu
+                .ui.menu.fluid.vertical
+                    each sectionTitle, index in sectionTitles 
+                        .item(class={addBorderRadius: index===0})
+                            h3.section_title(class={addBorderRadius: index===0}) #{sectionTitle}
                             - var sub_sections = resourcesInfo.filter(sub_section => {return sub_section.section===sectionTitle})
-                            each sub_section in sub_sections
-                                - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
-                                a(href="/resources/"+sub_section["value"])
-                                    p.subsection_title.subsection_link(class={active: isActiveSubSection}) 
-                                        | #{sub_section["title"]}
+                            .subsection
+                                each sub_section in sub_sections
+                                    - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
+                                    a(href="/resources/"+sub_section["value"])
+                                        p.subsection_title(class={active: isActiveSubSection}) 
+                                            | #{sub_section["title"]}
+            .column.twelve.wide.fullWidthMenu 
+                .ui.accordion.menu.fluid.vertical
+                    each sectionTitle, index in sectionTitles 
+                        - var isActiveSection = activeSubsectionObject["section"]===sectionTitle
+                        .item
+                            .title(class={addBorderRadius: index===0, active: isActiveSection})
+                                h3.section_title(class={addBorderRadius: index===0}) 
+                                    i.dropdown.icon
+                                    | #{sectionTitle}
+                            .content(class={active: isActiveSection})
+                                - var sub_sections = resourcesInfo.filter(sub_section => {return sub_section.section===sectionTitle})
+                                .subsection
+                                    each sub_section in sub_sections
+                                        - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
+                                        a(href="/resources/"+sub_section["value"])
+                                            p.subsection_title(class={active: isActiveSubSection}) 
+                                                | #{sub_section["title"]}
             .column.twelve.wide
                 - var language_colortags = { 'English': 'blue', 'Spanish': 'orange', 'Chinese': 'red', 'Vietnamese': 'purple'}
                 h2.boldText #{activeSubsectionObject["title"]}
@@ -24,14 +41,13 @@ block content
                         .column
                             .ui.fluid.card(href=resource["url"]).resourceCard
                                 .content
-                                    i.right.floated.icon(class="external alternate")
+                                    i.right.large.floated.icon.externalLinkIcon(class="external alternate")
                                     .header #{resource["title"]}
-                                    //- .description
-                                
+                                    //- .description   
+                                    //-     a.blue(href=resource["url"], target="_blank") #{resource["url"]}
                                 if resource["description"]
                                     .content
-                                        .description.addBottomMargin #{resource["description"]}
-                                    //-     a.blue(href=resource["url"], target="_blank") #{resource["url"]}
+                                        .description #{resource["description"]}
                                 .content.extra
                                     //- if resource["description"]
                                     //-     .description.addBottomMargin #{resource["description"]}
@@ -55,13 +71,15 @@ block scripts
     //-     $('.resourceCard').hover(
     //-         function(){
     //-             //- mouse over
-    //-             $(this).css("background-color", "#f2f2f2");
-    //-             $(this).find('.header').css("background-color", "#f2f2f2");
-    //-             $(this).find('.description').css("background-color", "#f2f2f2");
+    //-             $(this).css("background-color", "#f4f4f4");
+    //-             $(this).find('.header').css("background-color", "#f4f4f4");
+    //-             $(this).find('.description').css("background-color", "#f4f4f4");
+    //-             $(this).find('.content.extra').css("background-color", "red !important");
     //-         }, 
     //-         function(){
     //-             //- mouse out 
     //-             $(this).css("background-color", "");
     //-             $(this).find('.header').css("background-color", "");
     //-             $(this).find('.description').css("background-color", "");
+    //-             $(this).find('.content.extra').css("background-color", "");
     //-         })

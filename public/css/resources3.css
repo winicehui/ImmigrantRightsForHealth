@@ -4,8 +4,21 @@
     font-size: 1.3em;
 }
 
-.section {
-    margin-bottom: 5px;
+.sidebarMenu {
+    display: inline !important;
+}
+
+.fullWidthMenu {
+    display: none !important;
+}
+
+.addBorderRadius {
+    border-radius: .28571429rem .28571429rem 0rem 0rem;
+}
+
+.ui.menu>.item,
+.ui.menu>.item>.content.active {
+    padding: 0px 0px 0px 0px !important;
 }
 
 .section_title {
@@ -14,7 +27,11 @@
     font-weight: bold;
     padding: 15px 25px;
     margin: 0px;
-    background-color: #f2f2f2;
+    background-color: #d9d9d9;
+}
+
+.subsection {
+    padding: 8px 0px;
 }
 
 .subsection_title {
@@ -25,11 +42,11 @@
     color: black;
 }
 
-.subsection_link.active {
+.subsection_title.active {
     color: #298FFB;
 }
 
-.subsection_link:hover {
+.subsection_title:hover {
     color: #298FFB;
 }
 
@@ -40,22 +57,44 @@
 }
 
 .ui.card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+}
+
+.externalLinkIcon {
+    margin: 5px 5px 5px 8px !important;
+    display: flex;
+    float: right;
+}
+
+.header {
+    color: #375C83 !important;
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .content.extra {
     background-color: #f2f2f2 !important;
 }
 
-.icon {
-    width: 40px !important;
-    height: 40px !important;
-}
-
-.addBottomMargin {
-    margin-bottom: 10px;
-}
-
 .ui.label {
     margin: 2.5px;
+}
+
+
+/** when page width < 780px **/
+
+@media (max-width: 1050px) {
+    .sidebarMenu {
+        transition: 0.8s all ease;
+        display: none !important;
+        /** to hide/show the navbar items **/
+    }
+    .fullWidthMenu {
+        transition: 0.8s all ease;
+        display: inline !important;
+        /** to hide/show the navbar icon**/
+    }
+    .subsection_title {
+        padding: 15px 30px;
+    }
 }

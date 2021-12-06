@@ -10,21 +10,40 @@ block content
                     a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page 
         - var activeSubsectionObject = pregnancyQandAInfo.find(sub_section => {return sub_section.value===activeSubsection})
         .ui.grid.stackable 
-            .column.four.wide 
-                .ui.menu.fluid.stackable.vertical
-                    each sectionTitle in sectionTitles 
-                        .section
-                            h3.section_title 
-                                | #{sectionTitle.toUpperCase()}
+            .column.four.wide.sidebarMenu
+                .ui.menu.fluid.vertical
+                    each sectionTitle, index in sectionTitles 
+                        .item(class={addBorderRadius: index===0})
+                            h3.section_title(class={addBorderRadius: index===0}) 
+                                | #{sectionTitle}
                             - var sub_sections = pregnancyQandAInfo.filter(sub_section => {return sub_section.section===sectionTitle})
-                            each sub_section in sub_sections
-                                - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
-                                a(href="/QandA/"+sub_section["value"])
-                                    p.subsection_title.subsection_link(class={active: isActiveSubSection}) 
-                                        | #{sub_section["title"]}
+                            if sub_sections.length
+                                .subsection
+                                    each sub_section in sub_sections
+                                        - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
+                                        a(href="/QandA/"+sub_section["value"])
+                                            p.subsection_title(class={active: isActiveSubSection}) 
+                                                | #{sub_section["title"]}
+            .column.twelve.wide.fullWidthMenu 
+                .ui.accordion.menu.fluid.vertical
+                    each sectionTitle, index in sectionTitles 
+                        - var isActiveSection = activeSubsectionObject["section"]===sectionTitle
+                        .item
+                            .title(class={addBorderRadius: index===0, active: isActiveSection})
+                                h3.section_title(class={addBorderRadius: index===0}) 
+                                    i.dropdown.icon
+                                    | #{sectionTitle}
+                            .content(class={active: isActiveSection})
+                                - var sub_sections = pregnancyQandAInfo.filter(sub_section => {return sub_section.section===sectionTitle})
+                                .subsection
+                                    each sub_section in sub_sections
+                                        - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
+                                        a(href="/QandA/"+sub_section["value"])
+                                            p.subsection_title(class={active: isActiveSubSection}) 
+                                                | #{sub_section["title"]}
             .column.twelve.wide
                 h3.boldText.topic_title #{activeSubsectionObject["title"]}
-                .ui.accordion
+                .ui.accordion.QandA_div
                     each QandA in activeSubsectionObject["content"]
                         .title
                             i.dropdown.icon
