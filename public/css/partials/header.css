@@ -31,10 +31,6 @@
     font-size: 19px;
 }
 
-.headerListItems>a.active>h4 {
-    color: #557AA1 !important;
-}
-
 .headerIcon {
     display: none;
 }

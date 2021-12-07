@@ -49,10 +49,12 @@
 }
 
 .landingPic_button:hover {
+    /* background-color: #557AA1 !important; */
     filter: brightness(115%);
 }
 
 .landingPic_button:active {
+    /* background-color: #26415E !important; */
     filter: brightness(95%);
 }
 
@@ -205,7 +207,7 @@
 }
 
 .faqs_card_content>h1 {
-    color: #375C83;
+    color: #26415E;
     font-weight: bold;
 }
 

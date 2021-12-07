@@ -2,11 +2,11 @@ extends layout
 
 block content
     .QandA
-        .ui.grid.stackable.two.column
-            .column.twelve.wide.alignItems-center
-                h2.boldText Questions and Answers
+        .ui.grid.stackable.two.column.alignItems-center
+            .column.twelve.widealignItems-center
+                h2.boldText.pageTitle Questions and Answers
             .column.four.wide.alignItems-center
-                p Share Page | 
+                h5 Share Page | 
                     a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page 
         - var activeSubsectionObject = pregnancyQandAInfo.find(sub_section => {return sub_section.value===activeSubsection})
         .ui.grid.stackable 
@@ -42,11 +42,12 @@ block content
                                             p.subsection_title(class={active: isActiveSubSection}) 
                                                 | #{sub_section["title"]}
             .column.twelve.wide
-                h3.boldText.topic_title #{activeSubsectionObject["title"]}
+                h2.boldText.subTitle #{activeSubsectionObject["title"]}
                 .ui.accordion.QandA_div
                     each QandA in activeSubsectionObject["content"]
                         .title
-                            i.dropdown.icon
+                            i.large.icon(class="plus")
+                            i.large.icon(class="minus")
                             | #{QandA["question"]}
                         .content 
                             | #{QandA["answer"]}

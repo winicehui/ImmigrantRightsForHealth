@@ -1,7 +1,11 @@
 .QandA {
     width: 75%;
-    margin: 6rem 0rem;
-    font-size: 1.3em;
+    margin: 5rem 0rem;
+    /* font-size: 1.3em; */
+}
+
+.pageTitle {
+    color: #333333;
 }
 
 .sidebarMenu {
@@ -36,10 +40,10 @@
 
 .subsection_title {
     font-size: 18px;
-    line-height: 1.2em;
+    line-height: 22px;
     padding: 15px 25px;
     word-wrap: break-word;
-    color: black;
+    color: #333333;
 }
 
 .subsection_title.active {
@@ -50,24 +54,43 @@
     color: #298FFB;
 }
 
-.topic_title {
-    color: #375C83;
+.subTitle {
+    color: #26415E;
     /* text-align: center; */
     /* margin: 25px; */
     font-weight: bold;
+}
+
+.accordion>.title>i.minus.icon,
+.accordion>.title.active>i.plus.icon {
+    display: none;
+    color: #298FFB;
+    margin: 1px 20px 0px 10px;
+    width: auto;
+}
+
+.accordion>.title>i.plus.icon,
+.accordion>.title.active>i.minus.icon {
+    display: inline-block;
+    color: #298FFB;
+    margin: 1px 20px 0px 10px;
+    width: auto;
 }
 
 .QandA_div>.title {
     font-size: 20px !important;
     line-height: 30px;
     color: #333333;
+    font-weight: 550;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .QandA_div>.content {
-    color: #375C83;
+    color: #333333;
     font-size: 20px !important;
     line-height: 30px;
-    font-weight: 550;
+    margin-left: calc(1.5em + 25px);
 }
 
 

@@ -2,6 +2,9 @@ extends layout
 
 block content
     .resources
+        .ui.grid.stackable.two.column
+            .column.sixteen.wide
+                h2.boldText.pageTitle Resources
         - var activeSubsectionObject = resourcesInfo.find(sub_section => {return sub_section.value===activeSubsection})
         .ui.grid.centered 
             .column.four.wide.sidebarMenu
@@ -35,7 +38,7 @@ block content
                                                 | #{sub_section["title"]}
             .column.twelve.wide
                 - var language_colortags = { 'English': 'blue', 'Spanish': 'orange', 'Chinese': 'red', 'Vietnamese': 'purple'}
-                h2.boldText #{activeSubsectionObject["title"]}
+                h2.boldText.subTitle #{activeSubsectionObject["title"]}
                 .ui.grid.stackable.two.column
                     each resource in activeSubsectionObject["content"]
                         .column

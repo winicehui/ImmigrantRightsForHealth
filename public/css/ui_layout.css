@@ -60,6 +60,7 @@ div {
 .alignItems-center {
     display: flex !important;
     align-items: center;
+    justify-content: end;
 }
 
 .noMargin {
@@ -94,9 +95,14 @@ a.darkBlueLink {
     cursor: pointer;
 }
 
-a.darkBlueLink:hover,
-a.darkBlueLink:active {
+a.darkBlueLink:hover {
     color: #557AA1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.darkBlueLink:active {
+    color: #375C83;
     text-decoration: none;
     cursor: pointer;
 }

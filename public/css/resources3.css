@@ -1,7 +1,11 @@
 .resources {
     width: 75%;
-    margin: 6rem 0rem;
-    font-size: 1.3em;
+    margin: 5rem 0rem;
+    /* font-size: 1.3em; */
+}
+
+.pageTitle {
+    color: #333333;
 }
 
 .sidebarMenu {
@@ -36,10 +40,10 @@
 
 .subsection_title {
     font-size: 18px;
-    line-height: 1.2em;
+    line-height: 22px;
     padding: 15px 25px;
     word-wrap: break-word;
-    color: black;
+    color: #333333;
 }
 
 .subsection_title.active {
@@ -48,6 +52,10 @@
 
 .subsection_title:hover {
     color: #298FFB;
+}
+
+.subTitle {
+    color: #26415E;
 }
 
 .ui.card {
@@ -62,18 +70,25 @@
 
 .externalLinkIcon {
     margin: 5px 5px 5px 8px !important;
+    color: #333333;
     display: flex;
     float: right;
 }
 
 .header {
-    color: #375C83 !important;
+    color: #333333 !important;
+    font-size: 22px !important;
     margin: 0px !important;
     padding: 0px !important;
 }
 
+.content {
+    font-size: 18px !important;
+}
+
 .content.extra {
     background-color: #f2f2f2 !important;
+    font-size: 18px !important;
 }
 
 .ui.label {
