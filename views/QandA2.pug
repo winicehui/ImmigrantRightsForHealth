@@ -3,13 +3,14 @@ extends layout
 block content
     .QandA
         .ui.grid.stackable.two.column.alignItems-center
-            .column.twelve.widealignItems-center
+            .column.twelve.wide
                 h2.boldText.pageTitle Questions and Answers
             .column.four.wide.alignItems-center
-                h5 Share Page | 
+                h5
+                    i.print.icon
                     a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page 
         - var activeSubsectionObject = pregnancyQandAInfo.find(sub_section => {return sub_section.value===activeSubsection})
-        .ui.grid.stackable 
+        .ui.grid.centered 
             .column.four.wide.sidebarMenu
                 .ui.menu.fluid.vertical
                     each sectionTitle, index in sectionTitles 
