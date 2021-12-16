@@ -34,5 +34,100 @@
                 "answer": "Depending on the immigration status of the mother, immediate family members of hers can apply for permission to enter the US. However, the child's citizenship status will not enable additional family members to apply for family reunification, since the citizen must be older than 21 to sponsor a family member for a green card."
             }
         ]
+    },
+    {
+        "title": "Other Questions about Pregnancy",
+        "value": "pregnancy_other",
+        "section": "Pregnancy",
+        "content": [{
+                "question": "Will information about my immigration status be provided to my healthcare team?",
+                "answer": "Typically information about immigration status will be provided to healthcare teams, both for intake purposes and to determine health insurance coverage. However, healthcare providers have no obligation to inquite into or disclose immigration status information."
+            },
+            {
+                "question": "Am I entitled to special treatment while in detention center: prenatal care, access to abortion, nonuse of restraints for women in labor, preventative services for sexually transmitted infection, cancer screening, contraceptive provision?",
+                "answer": "That depends on the kind of detention center in question, who runs the center, and the reason for being there. However, it is general ICE policy to refrain from holding pregnant or nursing women in detention."
+            },
+            {
+                "question": "Does my immigration status exclude me from social security benefits?",
+                "answer": "To be eligible for social security benefits, an individual must be in an \"qualified alien\" category and meet a condition which allows \"qualified aliens\" to receive benefits. There are seven categories of qualified aliens, including \n 1) those lawfully admitted for permant residence, \n 2) those granted conditional entry under INA 203(a), \n 3) those paroled into the US under INA 212(d)(5), \n4) those admitted as refugees under INA 207, \n 5) those granted asylum under INA 208, \n 6) those who qualify for witholding of deportation under INA 241(b)(3), and \n 7) a \"Cuban and Haitian entrant\" as defined in the Refugee Education Assistance Act of 1980 501(e) or in another stauts which is to be considered a \"Cuban/Haitian entrant\" for SSI purposes. A qualified alien may receive benefits if they 1) were receiving SSI and lawfully residing in the US on August 22, 1996, 2) are a lawful permanent resident with 40 qualifying hours of work (including those of a spouse or parent), 3) are an active duty US Armed forces or honorably discharged, 4) were lawfully abiding in the US on August 22, 1996 and are blind or disabled, 5) were granted specific immigration status by DHS within 7 years of filing for SSI (including refugee or asylee). "
+            },
+            {
+                "question": "Can applying for public benefits jeopardize a pending green card application?",
+                "answer": "Receipt of public benefits may impact a pending green card application. Green card applicants are subject to the public charge rule. Under this rule, immigration officials will consider an applicant’s age, health, income, and past receipt of certain cash public benefits, among other things, in determining whether an applicant is likely to become primarily dependent on government benefits in the future. As a practical matter, however, few people are denied green cards because they accepted public benefits."
+            },
+            {
+                "question": "Am I eligible to enroll in coverage through the Affordable Care Act?",
+                "answer": "Only immigrants with qualified status are eligible for health insurance through the Affordable Care Act.18However, undocumented immigrants are eligible for emergency coverage."
+            },
+            {
+                "question": "Do I need to provide information about my own citizenship and immigration status if I aply for coverage through the Affordable Care Act, Medicaid, or CHIP on behalf of a family member?",
+                "answer": "Yes. Generally, in order to be eligible for insurance coverage, an individual will need to show that they have citizenship or are lawfully present within the US. However, pregnant women with a medically verified pregnancy are not required to produce proof of immigration status, and immigration status will not be considered when applying for emergency medical coverage."
+            }, {
+                "question": "Is there truth to the social media posts warning undocumented women to stay away from public assistance programs?",
+                "answer": "Under the public charge test, certain forms of public assistance programs may impactan immigrant’s application for certain immigration statuses. See https://www.ilrc.org/sites/default/files/resources/pc_safe_to_use_list_may_2021.pdf for a list of public benefits programs that are not considered under the public charge rule. Applications for certain kinds of visas may not be subject to the public charge rule, such as a U or T visa or a greencard for a person who already holds a U or T visa."
+            }
+        ]
+    },
+    {
+        "title": "Public Charge",
+        "value": "public_charge",
+        "section": "Public Charge",
+        "content": [{
+                "question": "Can I accept public benefits without affecting my immigration status?",
+                "answer": "There are certain limits on receiving public benefits for some people, but if you are a U.S. citizen, a refugee, an asylum-seeker, or a similarly-situated person, there are no limits on the public benefits you can accept. \n\nIf you lack immigration status, are on a temporary visa, or have a green card, there might be some limits on what public benefits you can get without hurting your immigration status."
+            },
+            {
+                "question": "What benefits might affect my immigration status?",
+                "answer": "If most of your income comes from government assistance, receiving public benefits can hurt your immigration status. This includes either getting cash from the government as your main source of income, or living at a long-term care facility paid for by the government."
+            },
+            {
+                "question": "What public benefits can I accept without affecting my immigration status?",
+                "answer": "1. Medicaid and other health insurance and health services, \n2. Children’s Health Insurance Program(CHIP),\n 3. Food assistance programs like Food Stamps and school lunch programs,\n4. Housing benefits,\n5. Childcare services,\n6. Educational assistance, \n7. And more!"
+            },
+            {
+                "question": "Can I accept housing assistance? For example, can I stay at a public homeless shelter?",
+                "answer": "Yes."
+            },
+            {
+                "question": "Can my kids accept school lunches?",
+                "answer": "Yes. Your kids can accept any meals provided by their schools."
+            },
+            {
+                "question": "Can I go to the emergency room to get medical care?",
+                "answer": "Yes. You can and should always go to the emergency room if you need emergency medical care."
+            },
+            {
+                "question": "Can I receive healthcare using Medicaid?",
+                "answer": "Yes."
+            },
+            {
+                "question": "Can I visit a soup kitchen or use food stamps?",
+                "answer": "Yes."
+            },
+            {
+                "question": "If I am pregnant, can I get care using Medicaid?",
+                "answer": "Yes."
+            },
+            {
+                "question": "Can I receive COVID-19 benefits?",
+                "answer": "Yes."
+            },
+            {
+                "question": "Can I accept health insurance that my state helps me pay for?",
+                "answer": "Yes."
+            },
+            {
+                "question": "If a natural disaster causes harm to myself or my property, can I accept government assistance?",
+                "answer": "Yes."
+            },
+            {
+                "question": "Can I accept donations from charities?",
+                "answer": "Yes."
+            },
+            {
+                "question": "Will something I did in the past that violates these rules affect my immigration status?",
+                "answer": "No."
+            }
+        ]
     }
 ]

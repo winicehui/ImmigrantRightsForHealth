@@ -51,7 +51,7 @@ block content
                             i.large.icon(class="minus")
                             | #{QandA["question"]}
                         .content 
-                            | #{QandA["answer"]}
+                            | !{QandA["answer"].replace(/\n/g, '<br/>')}
                         .ui.divider
                         //- .QandA_div
                         //-     p.boldText.QandA_text.question #{QandA["question"]}
