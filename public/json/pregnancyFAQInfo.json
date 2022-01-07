@@ -1,11 +1,10 @@
 {
     "Pregnancy Planning": [{
-            "question": "Will enrolling in Medicaid while pregnant impact my future opportunities for residency or citizenship?",
-            "answer": "Enrolling in federally funded Medicaid, other than support for long term institutional care is not a factor when considering whether a person is likely to become a public charge, and thus will not impact future opportunities for residency or citizenship."
+            "question": "No. Enrolling in federally funded Medicaid, other than support for long term institutional care, is not a factor when considering whether a person is likely to become a public charge, and thus will not impact future opportunities for residency or citizenship."
         },
         {
             "question": "If I am undocumented, am I eligible for insurance coverage for prenatal care?",
-            "answer": "Undocumented immigrants are not eligible for health insurance coverage, but prenatal care may be available, depending on state programs. In New York State, undocumented immigrants are eligible for Medicaid coverage for the care and services required for the treatment of medical emergencies. Women with a medically verified pregnancy are eligible for Medicaid coverage throughout the period of their pregnancy regardless of their immigration status and are not required to provide documentation of immigration status through the last day of the month in which the 60-day post-partum period ends. This coverage includes prenatal and limited postpartum care."
+            "answer": "Yes (in New York). Undocumented immigrants are not eligible for health insurance coverage, but prenatal care may be available, depending on state programs. In New York State, undocumented immigrants are eligible for Medicaid coverage for the care and services required for the treatment of medical emergencies. Women with a medically verified pregnancy are eligible for Medicaid coverage throughout the period of their pregnancy regardless of their immigration status and are not required to provide documentation of immigration status through the last day of the month in which the 60-day post-partum period ends. This coverage includes prenatal and limited postpartum care."
         }
     ],
     "Care During Pregnancy": [{

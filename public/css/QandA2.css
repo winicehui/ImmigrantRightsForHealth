@@ -67,6 +67,7 @@
     color: #298FFB;
     margin: 1px 20px 0px 10px;
     width: auto;
+    font-size: 25px !important;
 }
 
 .accordion>.title>i.plus.icon,
@@ -75,6 +76,7 @@
     color: #298FFB;
     margin: 1px 20px 0px 10px;
     width: auto;
+    font-size: 25px !important;
 }
 
 .QandA_div>.title {

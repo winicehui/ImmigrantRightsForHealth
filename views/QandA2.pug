@@ -3,10 +3,11 @@ extends layout
 block content
     .QandA
         .ui.grid.stackable.two.column.alignItems-center
-            .column.twelve.wide
+            .column.eight.wide
                 h2.boldText.pageTitle Questions and Answers
-            .column.four.wide.alignItems-center
+            .column.eight.wide.alignItems-center
                 h5
+                    | Last Updated: 07 Jan 2022 | 
                     i.print.icon
                     a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page 
         - var activeSubsectionObject = pregnancyQandAInfo.find(sub_section => {return sub_section.value===activeSubsection})
@@ -47,8 +48,8 @@ block content
                 .ui.accordion.QandA_div
                     each QandA in activeSubsectionObject["content"]
                         .title
-                            i.large.icon(class="plus")
-                            i.large.icon(class="minus")
+                            i.icon(class="plus")
+                            i.icon(class="minus")
                             | #{QandA["question"]}
                         .content 
                             | !{QandA["answer"].replace(/\n/g, '<br/>')}

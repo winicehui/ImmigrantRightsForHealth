@@ -60,6 +60,7 @@ div {
 .alignItems-center {
     display: flex !important;
     align-items: center;
+    align-content: center;
     justify-content: end;
 }
 
