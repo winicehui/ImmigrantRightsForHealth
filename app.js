@@ -229,7 +229,7 @@ app.get('/QandA/:sectionValue?', async function(req, res) {
         // 'COVID-19',
     ]
 
-    const activeSubsection = req.params.sectionValue || 'pregnancy_planning';
+    const activeSubsection = req.params.sectionValue || 'public_charge';
 
     res.render('QandA2', {
         title: 'Questions and Answers',
