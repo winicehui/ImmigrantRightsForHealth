@@ -3,25 +3,37 @@
         "value": "general_resources_for_immigrant_communities",
         "section": "General",
         "content": [{
-                "title": "Immigrant Eligibility for Public Benefits in New York State",
-                "url": "https://empirejustice.org/resources_post/immigrant-eligibility-for-public-benefits/",
-                "description": "",
+                "title": "Immigrant Eligibility for \n Public Benefits in New York State",
+                "source": "Empire Justice Center and The New York Immigration Coalition",
+                "url": "https://empirejustice.org/wp-content/uploads/2021/08/NYIC-Public-Benefits-Chart-Nov-2021.pdf",
+                "description": "A chart that lists federal benefits and New York State benefits based on immigration status. \n\nIt also identifies what benefits could potentially have public charge implications.",
                 "languages": [
                     "English"
                 ]
             },
             {
-                "title": "Overview of Immigrant Eligibility for Federal Programs",
-                "url": "https://www.nilc.org/issues/economic-support/table_ovrw_fedprogs/",
-                "description": "",
+                "title": "Immigrant Eligibility for Federal Programs",
+                "source": "National Immigration Law Center",
+                "url": "https://www.nilc.org/wp-content/uploads/2015/11/tbl1_ovrvw-fed-pgms.pdf",
+                "description": "A chart that lists available federal benefits and public assistance programs based on immigration status. ",
                 "languages": [
                     "English"
                 ]
             },
             {
-                "title": "All State Public Benefits Charts and Map (2021)",
+                "title": "Public Benefits Maps",
+                "source": "National Immigrant Women’s Advocacy Project",
+                "url": "https://map.niwap.org/",
+                "description": "Interactive maps that list available public benefits based on immigrant’s state and immigration status.",
+                "languages": [
+                    "English"
+                ]
+            },
+            {
+                "title": "Public Benefits Charts",
+                "source": "National Immigrant Women’s Advocacy Project",
                 "url": "https://niwaplibrary.wcl.american.edu/all-state-public-benefits-charts",
-                "description": "",
+                "description": "Charts that list available federal and state benefits based on an immigrant's state and immigration status.",
                 "languages": [
                     "English"
                 ]
@@ -29,37 +41,39 @@
         ]
     },
     {
-        "title": "Resources for Undocumented Immigrants",
+        "title": "COVID-19 Resources for Immigrant Communities",
         "value": "covid_resources_for_undocumented_immigrants",
         "section": "COVID-19",
         "content": [{
-                "title": "Tangible Support for Undocumented Communities",
-                "url": "https://immigrantsrising.org/resource/tangible-support-for-immigrant-communities-during-covid-19/",
-                "description": "List of compiled resources for undocumented individuals",
-                "languages": [
-                    "English",
-                    "Spanish",
-                    "Chinese"
-                ]
-            },
-            {
-                "title": "Healthcare Access for Undocumented Immigrants",
-                "url": "https://unitedwedream.org/2020/03/healthcare-access-for-undocumented-folks-in-the-time-of-covid19/",
-                "description": "Though undocumented individuals are typically not eligible for health insurance, there are many free/low-cost clinics that serve the uninsured.",
+                "title": "Resources for Undocumented Immigrants During COVID-19 ",
+                "source": "Immigrant Rising",
+                "url": "https://immigrantsrising.org/resource/tangible-support-for-immigrant-communities-during-covid-19/ ",
+                "description": "A list of compiled resources for undocumented immigrants to help navigate the COVID-19 pandemic.",
                 "languages": [
                     "English"
                 ]
             },
             {
                 "title": "Free Medical Clinic Directory",
+                "source": "Free Clinic Directory",
                 "url": "https://freeclinicdirectory.org/",
-                "description": "Directory of free clinics that serve the uninsured.",
+                "description": "A directory of free clinics that serve individuals without healthcare insurance, based on state.",
+                "languages": [
+                    "English"
+                ]
+            },
+            {
+                "title": "Healthcare Access for Undocumented Immigrants \nDuring COVID-19",
+                "source": "United We Dream",
+                "url": "https://unitedwedream.org/2020/03/healthcare-access-for-undocumented-folks-in-the-time-of-covid19/",
+                "description": "A list of free/ low-cost/ community health care centers and other resources accessible to individuals without healthcare insurance, based on state. \n\nAlthough undocumented individuals are typically not eligible for health insurance, there are many free/ low-cost clinics that are accessible to individuals without healthcare insurance.",
                 "languages": [
                     "English"
                 ]
             },
             {
                 "title": "ICE Will Not Make Arrests at Hospitals",
+                "source": "U.S. Immigration and Customs Enforcement (U.S. ICE)",
                 "url": "https://www.ice.gov/coronavirus",
                 "description": "\"ICE does not conduct enforcement operations at medical facilities, except under extraordinary circumstances. Claims to the contrary are false and create unnecessary fear within communities. Individuals should continue to seek medical care.\"",
                 "languages": [
@@ -69,49 +83,55 @@
         ]
     },
     {
-        "title": "Immigration Law",
+        "title": "COVID-19 and Immigration Law",
         "value": "covid-19_and_immigration_law",
         "section": "COVID-19",
         "content": [{
-                "title": "Understanding the Impact of Key Provisions of COVID-19 Relief Bills on Immigrant Communities",
-                "url": "https://www.nilc.org/issues/economic-support/impact-of-covid19-relief-bills-on-immigrant-communities/",
-                "description": "\"The purpose of this policy brief is to provide information on the COVID-19 relief package's impact on low-income immigrants and suggestions for urgently needed improvements in any future relief bills, with a focus on health, public benefits, economic support, and employment protections. Please note that this is not meant to be a comprehensive analysis of the bill.\"",
-                "languages": [
-                    "English"
-                ]
-            },
-            {
-                "title": "Recovery Rebates and Unemployment Compensation under the CARES Act: Immigration-Related Eligibility Criteria",
-                "url": "https://crsreports.congress.gov/product/pdf/LSB/LSB10442",
-                "description": "Congressional Research Service report about immigration-related eligibility requirements for two types of benefits established by the CARES Act: (1) the tax credits/rebates; and (2) the various forms of federally funded unemployment insurance benefits.",
-                "languages": [
-                    "English"
-                ]
-            },
-            {
                 "title": "USCIS COVID-19 Public Charge Notice",
+                "source": "U.S. Citizenship and Immigration Services (USCIS)",
                 "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/public-charge",
-                "description": "USCIS will not consider COVID-19 testing, treatment, or preventive care (including a vaccine if a vaccine becomes available) as part of a public charge inadmissibility determination, even if paid for by a public benefit like Medicaid.",
+                "description": "USCIS will not consider COVID-19 testing, treatment, or preventive care (including vaccines) as part of a public charge inadmissibility determination, even if paid for by a public benefit like Medicaid.",
                 "languages": [
                     "English",
                     "Spanish"
                 ]
             },
             {
-                "title": "COVID-19 Stimulus Package: What Care Act Rebates Mean for Immigrants",
-                "url": "http://www.wakeforestlawreview.com/2020/04/covid-19-stimulus-package-what-cares-act-rebates-mean-for-immigrants/",
-                "languages": [
-                    "English"
-                ]
-            },
-            {
-                "title": "Public Benefits FAQs COVID-19",
+                "title": "Public Charge Rule and COVID-19 FAQs",
+                "source": "Government of the District of Columbia",
                 "url": "https://coronavirus.dc.gov/release/public-notice-public-charge-rule-faqs-covid-19-information",
+                "description": "A compiled list of frequently asked questions and answers about the new Aug 14, 2019 final public charge rule and COVID-19.",
                 "languages": [
                     "English",
                     "Spanish",
                     "Chinese",
                     "Vietnamese"
+                ]
+            },
+            {
+                "title": "Understanding the Impact of the COVID-19 Relief Bills on Immigrant Communities",
+                "source": "National Immigration Law Center",
+                "url": "https://www.nilc.org/wp-content/uploads/2020/04/COVID19-relief-bills-understanding-key-provisions.pdf ",
+                "description": "A policy brief that provides information on the impact of the COVID-19 relief package on low-income immigrants and more.",
+                "languages": [
+                    "English"
+                ]
+            }, {
+                "title": "COVID-19 Stimulus Package: What CARES Act Rebates Mean for Immigrants",
+                "source": "The Wake Forest Law Review",
+                "url": "http://www.wakeforestlawreview.com/2020/04/covid-19-stimulus-package-what-cares-act-rebates-mean-for-immigrants/",
+                "description": "A report about the implications and consequences of the CARES Act rebates for immigrants.",
+                "languages": [
+                    "English"
+                ]
+            },
+            {
+                "title": "Recovery Rebates and Unemployment Compensation under the CARES Act: Immigration-Related Eligibility Criteria",
+                "source": "Congressional Research Service",
+                "url": "https://crsreports.congress.gov/product/pdf/LSB/LSB10442",
+                "description": "The Congressional Research Service report about immigration-related eligibility requirements for the two types of benefits established by the CARES Act: (1) the tax credits/rebates; and (2) the various forms of federally funded unemployment insurance benefits.",
+                "languages": [
+                    "English"
                 ]
             }
         ]
@@ -122,6 +142,7 @@
         "section": "COVID-19",
         "content": [{
             "title": "How Uninsured Patients Can Get Help During the Covid-19 Pandemic",
+            "source": "PBS",
             "url": "https://www.pbs.org/newshour/health/how-uninsured-patients-can-get-help-during-covid-19-pandemic",
             "description": "This article explains how states are expanding eligibility so they can temporarily insure more of their residents during the pandemic. Private insurance companies are also asking Congress to open up enrollment on the federal exchange.",
             "languages": [
@@ -134,23 +155,26 @@
         "value": "covid_19_and_domestic_workers",
         "section": "COVID-19",
         "content": [{
-                "title": "COVID-19 Related Resources for Domestic Workers",
+                "title": "Resources for Domestic Workers during COVID-19",
+                "source": "National Domestic Workers Alliance",
                 "url": "https://membership.domesticworkers.org/coronavirus/",
-                "description": "COVID-19 Related Resources for Domestic Workers.",
+                "description": "A COVID-19 related resources for domestic workers (ex: working safely, getting support, vaccines).",
                 "languages": [
                     "English"
                 ]
             },
             {
                 "title": "Fair Practices for Employers",
-                "url": "https://domesticemployers.org/support-during-the-coronavirus-pandemic/#resources-for-workers",
+                "source": "Hand in Hand: The Domestic Employers Network",
+                "url": "https://domesticemployers.org/support-during-the-coronavirus-pandemic/#fair-practices-for-employers",
                 "description": "Fair Practices for Employers.",
                 "languages": [
                     "English"
                 ]
             },
             {
-                "title": "National Domestic Workers Alliance Resources",
+                "title": "Resources for Domestic Workers",
+                "source": "National Domestic Workers Alliance",
                 "url": "https://domesticworkers.org/?fbclid=IwAR0dni3UgcCbjrBGbCYWJdSYBol15mgHOro",
                 "description": "The National Domestic Workers Alliance is providing emergency assistance for domestic workers that enables them to stay home and healthy.",
                 "languages": [

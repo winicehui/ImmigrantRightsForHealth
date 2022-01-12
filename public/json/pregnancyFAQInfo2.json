@@ -3,6 +3,10 @@
         "value": "pregnancy_planning",
         "section": "Pregnancy",
         "content": [{
+                "question": "Which prenatal vitamins should I be taking?",
+                "answer": ""
+            },
+            {
                 "question": "Will enrolling in Medicaid while pregnant impact my future opportunities for residency or citizenship?",
                 "answer": "No. Enrolling in federally funded Medicaid, other than support for long term institutional care, is not a factor when considering whether a person is likely to become a public charge, and thus will not impact future opportunities for residency or citizenship."
             },
@@ -67,66 +71,9 @@
                 "answer": "Under the public charge test, certain forms of public assistance programs may impactan immigrant’s application for certain immigration statuses. See https://www.ilrc.org/sites/default/files/resources/pc_safe_to_use_list_may_2021.pdf for a list of public benefits programs that are not considered under the public charge rule. Applications for certain kinds of visas may not be subject to the public charge rule, such as a U or T visa or a greencard for a person who already holds a U or T visa."
             }
         ]
-    }, {
-        "title": "Public Benefits",
-        "value": "covid_public_benefits",
-        "section": "COVID-19",
-        "content": [{
-                "question": "If I am undocumented and therefore do not qualify for Medicaid, can I access emergency Medicaid to cover coronavirus treatment? ",
-                "answer": "Yes."
-            },
-            {
-                "question": "Are there other options for undocumented people besides going to the emergency room and accessing emergency Medicaid?",
-                "answer": "Yes. Undocumented people (and anyone else) can go to free or low-cost clinics."
-            },
-            {
-                "question": "I have legal status, but I have been in the United States for less than five years. Can I qualify for Medicaid? ",
-                "answer": "Many lawful noncitizens must be present in the United States for five years before they can access Medicaid. Refugees, asylees, and lawful permanent residents (“green card holders”), however, do not need to wait five years before they can access Medicaid. States have the option of waiving the five-year period for pregnant women (Medicaid) and children (CHIP –Children’s Health Insurance Program). For example, New York has waived the five-year waiting period for pregnant women and children. \n\nAccessing Medicaid is a negative factor in the “public charge” determination. There is an exception for children under 21 and pregnant women, so this will not count against the individual in the “public charge” determination. "
-            },
-            {
-                "question": "I qualify for Medicaid but am afraid that if I use Medicaid for coronavirus treatment that it will count against me in the public charge determination. Will it?",
-                "answer": "USCIS has announced that it will not consider coronavirus testing, treatment or preventive care (such as a vaccine if one becomes available) as part of the public charge determination, even if paid for by Medicaid. "
-            },
-            {
-                "question": "Can undocumented immigrants access private health insurance?",
-                "answer": "Undocumented immigrants cannot purchase private health insurance coverage through the Affordable Care Act (ACA) Marketplaces. Some undocumented immigrants may access private health insurance as a spouse or dependent of an employee who receives health insurance through his or her employer. Other undocumented immigrants who are students may receive health insurance through their colleges or universities. Undocumented immigrants can purchase private health insurance on the individual market outside of the ACA marketplaces (i.e. directly from an insurance company), but not all plans on the individual marketplace comply with the ACA. "
-            },
-            {
-                "question": "I have legal status, but I don’t have health insurance. How can I get coverage?",
-                "answer": "If you previously had health insurance through an employer with at least 20 employees but lost your job due to coronavirus, you have the option of keeping the same health plan through COBRA (The Consolidated Budget Reconciliation Act). As your employer will no longer pay part of the monthly premium, however, maintaining the same health plan on your own may be prohibitively expensive. \n\nYou can also compare private insurance plans through ACA marketplaces (Healthcare.gov or your state-run ACA marketplace). Losing your job is considered a “qualifying event” to enroll in a plan on all health insurance exchanges. If you have not lost your job but need health coverage, some states (including New York) have created special enrollment periods in light of the coronavirus pandemic so that uninsured persons can enroll in an ACA insurance plan without a “qualifying event” (the normal enrollment period for Healthcare.gov and state-run ACA marketplaces is in the fall). The federal government has not expanded the enrollment period on Healthcare.gov. \n\nYou should check if you qualify for Medicaid based on the requirements of your state. Individuals can enroll in Medicaid year-round, and as enrollment is based on monthly income, it may be a good option for individuals who have recently lost their job. \n\nIf you cannot find a health insurance plan that works for the adults in your family, your children may be able to get coverage. The rules for children’s and pregnant women’s enrollment in Medicaid are different than for the general public. Go to InsureKidsNow.govto determine if your children are eligible."
-            },
-            {
-                "question": "Can individuals with DACA (Deferred Action for Childhood Arrivals) access Medicaid, insurance through the ACA Marketplaces, or private health insurance through an employer?",
-                "answer": "Individuals with DACA are not eligible for Medicaid and cannot purchase private health insurance coverage through the ACA Marketplaces. As DACA recipients have work authorization, they can access employer-provided private health insurance. \n\nDACA recipients can access emergency Medicaid if they meet the income requirements for Medicaid and arrive to a hospital suffering from an emergency medical condition (meaning that the absence of immediate medical attention could put the patient in serious jeopardy, impair bodily functions, or cause serious disfunction to an organ or body part). "
-            },
-            {
-                "question": "I am undocumented. Is it possible that ICE (US Immigration and Customs Enforcement) will come to hospitals?",
-                "answer": "DHS (the Department of Homeland Security) has internal policy guidelines that recognize schools, medical treatment and health care facilities, places of worship, religious or civil ceremonies, and public demonstrations as “sensitive locations.” According to these internal policy guidelines, ICE should limit or avoid immigration enforcement in any sensitive locations. These policy guidelines, however, exist only as internal agency memorandum and not as federal law. While it is possible that ICE will come to a hospital, it is unlikely. ICE is not stopping immigration enforcement in light of the coronavirus pandemic."
-            },
-            {
-                "question": "Do noncitizensqualify for coronavirus-related sick leave under the Families First Coronavirus Response Act (FFCRA)?",
-                "answer": "The FFCRA does not include any immigration status-related restrictions. Paid sick leave is paid to employees the same way that their wages are paid, sothere is generally no involvement with government agencies."
-            },
-            {
-                "question": "I lost my job because of the coronavirus pandemic. Are noncitizenseligible for unemployment insurance?",
-                "answer": "Noncitizensare generally eligible for unemployment insurance benefits as long as they are:(1) work-authorized at the time they file for unemployment benefits and during the entire time that they are receiving benefits;and (2) meet the state residency requirements for unemployment benefits. \n\nReceiving unemployment insurance benefits will not count against the individual in the public charge determination because unemployment insurance is an earned benefit and not a public benefit."
-            },
-            {
-                "question": "I heard that everyone will receive a $1,200 check in the mail to offset economic losses due to the coronavirus pandemic. Can noncitizens receive the $1,200 rebate?",
-                "answer": "The CARES (Coronavirus Aid, Relief, and Economic Security) Act provides a $1,200 rebate toindividual taxpayers and a $2,400 rebate for taxpayers filing taxes jointly. Taxpayers must have a Social Security number to receive the rebate. If an individual filed a tax return in 2018 or 2019 with a valid Social Security number, she will get a rebatein the mail. (The IRS has extended the deadline to file fiscal year 2019 taxes to July 15, 2020.)If you have not filed a tax return but receive Social Security benefits, your rebate will be estimated based on your Social Security benefits statement. \n\nThe CARES tax rebate will not count against an individual in the public charge determination, as the rebate is a tax credit and not cash assistance."
-            },
-            {
-                "question": "Is Immigration Court (Executive Office for Immigration Review) still hearing casesin light of the coronavirus pandemic?",
-                "answer": "All non-detained hearings scheduled through May 1, 2020 have been postponed. All Migrant Protection Protocols (MPP) hearings scheduled through May 1, 2020 have been postponed. Individuals with scheduled MPP hearings before and on May 1, 2020 should presentthemselves at their designated port of entry on their previously scheduled date to receive a tear sheet and hearing notice containing their new hearing date. Individuals and their attorneys can now file by email through temporary email addresses for the Office of the Chief Administrative Hearing Officer, the Board of Immigration Appeals, and the Immigration Courts nationwide. The operational status for each Immigration Court (i.e. open, open for detained hearings and filings only, closedetc.) can be foundby locations using the below link. "
-            },
-            {
-                "question": "Will applying for rental assistance, Section 8 or other housing benefits, cash assistance or food stamps for their childrenduring the COVID-19 pandemic count against anoncitizen during a public charge determination?",
-                "answer": "Generally, applicants can apply for food stamps for their children. This is permitted because children’s benefit use is nottobe considered in a public charge determination."
-            }
-        ]
     },
     {
-        "title": "Public Benefits",
+        "title": "General",
         "value": "public_charge",
         "section": "Public Benefits",
         "content": [{
@@ -184,6 +131,64 @@
             {
                 "question": "Will something I did in the past that violates these rules affect my immigration status?",
                 "answer": "No."
+            }
+        ]
+    },
+    {
+        "title": "COVID-19",
+        "value": "covid_public_benefits",
+        "section": "Public Benefits",
+        "content": [{
+                "question": "If I am undocumented and therefore do not qualify for Medicaid, can I access emergency Medicaid to cover coronavirus treatment? ",
+                "answer": "Yes."
+            },
+            {
+                "question": "Are there other options for undocumented people besides going to the emergency room and accessing emergency Medicaid?",
+                "answer": "Yes. Undocumented people (and anyone else) can go to free or low-cost clinics."
+            },
+            {
+                "question": "I have legal status, but I have been in the United States for less than five years. Can I qualify for Medicaid? ",
+                "answer": "Many lawful noncitizens must be present in the United States for five years before they can access Medicaid. Refugees, asylees, and lawful permanent residents (“green card holders”), however, do not need to wait five years before they can access Medicaid. States have the option of waiving the five-year period for pregnant women (Medicaid) and children (CHIP –Children’s Health Insurance Program). For example, New York has waived the five-year waiting period for pregnant women and children. \n\nAccessing Medicaid is a negative factor in the “public charge” determination. There is an exception for children under 21 and pregnant women, so this will not count against the individual in the “public charge” determination. "
+            },
+            {
+                "question": "I qualify for Medicaid but am afraid that if I use Medicaid for coronavirus treatment that it will count against me in the public charge determination. Will it?",
+                "answer": "USCIS has announced that it will not consider coronavirus testing, treatment or preventive care (such as a vaccine if one becomes available) as part of the public charge determination, even if paid for by Medicaid. "
+            },
+            {
+                "question": "Can undocumented immigrants access private health insurance?",
+                "answer": "Undocumented immigrants cannot purchase private health insurance coverage through the Affordable Care Act (ACA) Marketplaces. Some undocumented immigrants may access private health insurance as a spouse or dependent of an employee who receives health insurance through his or her employer. Other undocumented immigrants who are students may receive health insurance through their colleges or universities. Undocumented immigrants can purchase private health insurance on the individual market outside of the ACA marketplaces (i.e. directly from an insurance company), but not all plans on the individual marketplace comply with the ACA. "
+            },
+            {
+                "question": "I have legal status, but I don’t have health insurance. How can I get coverage?",
+                "answer": "If you previously had health insurance through an employer with at least 20 employees but lost your job due to coronavirus, you have the option of keeping the same health plan through COBRA (The Consolidated Budget Reconciliation Act). As your employer will no longer pay part of the monthly premium, however, maintaining the same health plan on your own may be prohibitively expensive. \n\nYou can also compare private insurance plans through ACA marketplaces (Healthcare.gov or your state-run ACA marketplace). Losing your job is considered a “qualifying event” to enroll in a plan on all health insurance exchanges. If you have not lost your job but need health coverage, some states (including New York) have created special enrollment periods in light of the coronavirus pandemic so that uninsured persons can enroll in an ACA insurance plan without a “qualifying event” (the normal enrollment period for Healthcare.gov and state-run ACA marketplaces is in the fall). The federal government has not expanded the enrollment period on Healthcare.gov. \n\nYou should check if you qualify for Medicaid based on the requirements of your state. Individuals can enroll in Medicaid year-round, and as enrollment is based on monthly income, it may be a good option for individuals who have recently lost their job. \n\nIf you cannot find a health insurance plan that works for the adults in your family, your children may be able to get coverage. The rules for children’s and pregnant women’s enrollment in Medicaid are different than for the general public. Go to InsureKidsNow.govto determine if your children are eligible."
+            },
+            {
+                "question": "Can individuals with DACA (Deferred Action for Childhood Arrivals) access Medicaid, insurance through the ACA Marketplaces, or private health insurance through an employer?",
+                "answer": "Individuals with DACA are not eligible for Medicaid and cannot purchase private health insurance coverage through the ACA Marketplaces. As DACA recipients have work authorization, they can access employer-provided private health insurance. \n\nDACA recipients can access emergency Medicaid if they meet the income requirements for Medicaid and arrive to a hospital suffering from an emergency medical condition (meaning that the absence of immediate medical attention could put the patient in serious jeopardy, impair bodily functions, or cause serious disfunction to an organ or body part). "
+            },
+            {
+                "question": "I am undocumented. Is it possible that ICE (US Immigration and Customs Enforcement) will come to hospitals?",
+                "answer": "DHS (the Department of Homeland Security) has internal policy guidelines that recognize schools, medical treatment and health care facilities, places of worship, religious or civil ceremonies, and public demonstrations as “sensitive locations.” According to these internal policy guidelines, ICE should limit or avoid immigration enforcement in any sensitive locations. These policy guidelines, however, exist only as internal agency memorandum and not as federal law. While it is possible that ICE will come to a hospital, it is unlikely. ICE is not stopping immigration enforcement in light of the coronavirus pandemic."
+            },
+            {
+                "question": "Do noncitizensqualify for coronavirus-related sick leave under the Families First Coronavirus Response Act (FFCRA)?",
+                "answer": "The FFCRA does not include any immigration status-related restrictions. Paid sick leave is paid to employees the same way that their wages are paid, sothere is generally no involvement with government agencies."
+            },
+            {
+                "question": "I lost my job because of the coronavirus pandemic. Are noncitizenseligible for unemployment insurance?",
+                "answer": "Noncitizensare generally eligible for unemployment insurance benefits as long as they are:(1) work-authorized at the time they file for unemployment benefits and during the entire time that they are receiving benefits;and (2) meet the state residency requirements for unemployment benefits. \n\nReceiving unemployment insurance benefits will not count against the individual in the public charge determination because unemployment insurance is an earned benefit and not a public benefit."
+            },
+            {
+                "question": "I heard that everyone will receive a $1,200 check in the mail to offset economic losses due to the coronavirus pandemic. Can noncitizens receive the $1,200 rebate?",
+                "answer": "The CARES (Coronavirus Aid, Relief, and Economic Security) Act provides a $1,200 rebate toindividual taxpayers and a $2,400 rebate for taxpayers filing taxes jointly. Taxpayers must have a Social Security number to receive the rebate. If an individual filed a tax return in 2018 or 2019 with a valid Social Security number, she will get a rebatein the mail. (The IRS has extended the deadline to file fiscal year 2019 taxes to July 15, 2020.)If you have not filed a tax return but receive Social Security benefits, your rebate will be estimated based on your Social Security benefits statement. \n\nThe CARES tax rebate will not count against an individual in the public charge determination, as the rebate is a tax credit and not cash assistance."
+            },
+            {
+                "question": "Is Immigration Court (Executive Office for Immigration Review) still hearing casesin light of the coronavirus pandemic?",
+                "answer": "All non-detained hearings scheduled through May 1, 2020 have been postponed. All Migrant Protection Protocols (MPP) hearings scheduled through May 1, 2020 have been postponed. Individuals with scheduled MPP hearings before and on May 1, 2020 should presentthemselves at their designated port of entry on their previously scheduled date to receive a tear sheet and hearing notice containing their new hearing date. Individuals and their attorneys can now file by email through temporary email addresses for the Office of the Chief Administrative Hearing Officer, the Board of Immigration Appeals, and the Immigration Courts nationwide. The operational status for each Immigration Court (i.e. open, open for detained hearings and filings only, closedetc.) can be foundby locations using the below link. "
+            },
+            {
+                "question": "Will applying for rental assistance, Section 8 or other housing benefits, cash assistance or food stamps for their childrenduring the COVID-19 pandemic count against anoncitizen during a public charge determination?",
+                "answer": "Generally, applicants can apply for food stamps for their children. This is permitted because children’s benefit use is nottobe considered in a public charge determination."
             }
         ]
     }

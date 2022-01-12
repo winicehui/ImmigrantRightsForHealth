@@ -224,9 +224,9 @@ app.get('/QandA/:sectionValue?', async function(req, res) {
     pregnancyQandAInfo = JSON.parse(pregnancyQandAData.toString());
 
     const sectionTitles = [
+        'Public Benefits',
         'Pregnancy',
-        'COVID-19',
-        'Public Benefits'
+        // 'COVID-19',
     ]
 
     const activeSubsection = req.params.sectionValue || 'pregnancy_planning';

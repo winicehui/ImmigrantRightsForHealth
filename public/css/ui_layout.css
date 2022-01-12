@@ -108,6 +108,10 @@ a.darkBlueLink:active {
     cursor: pointer;
 }
 
+a.darkBlueLink.active h4 {
+    color: #557AA1;
+}
+
 
 /* Used in Resources Cards*/
 

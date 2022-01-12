@@ -3,6 +3,12 @@ extends layout
 block content
     .resources
         h2.boldText.pageTitle Resources
+        //- h4 RightsForHealth is dedicated to increasing access to resources for immigrant communities in New York State. 
+        h4 This resource library contains links to helpful and relevant external resources for immigrant communities. The resources have been compiled and checked for accuracy by the RightsforHealth team. 
+        h4 You can browse by topic.
+        //- h4 You can browse by our overall areas of focus, research methodology, type of media we examine, and the specific topics we study. If you are interested in any studies that you cannot access here, please contact info@commhsp.org.
+        br
+        br
         - var activeSubsectionObject = resourcesInfo.find(sub_section => {return sub_section.value===activeSubsection})
         .ui.grid.centered 
             .column.four.wide.sidebarMenu
@@ -42,13 +48,15 @@ block content
                         .column
                             .ui.fluid.card(href=resource["url"]).resourceCard
                                 .content
-                                    i.right.large.floated.icon.externalLinkIcon(class="external alternate")
-                                    .header #{resource["title"]}
-                                    //- .description   
-                                    //-     a.blue(href=resource["url"], target="_blank") #{resource["url"]}
+                                    i.right.floated.icon.external.alternate.externalLinkIcon  
+                                    .header !{resource["title"].replace(/\n/g, '<br/>')}  
+                                    .description.source   
+                                        if resource["source"]
+                                            | #{resource["source"]}
+                                        //- a.blue(href=resource["url"], target="_blank") #{resource["url"]}
                                 if resource["description"]
                                     .content
-                                        .description #{resource["description"]}
+                                        .description !{resource["description"].replace(/\n/g, '<br/>')}
                                 .content.extra
                                     //- if resource["description"]
                                     //-     .description.addBottomMargin #{resource["description"]}
