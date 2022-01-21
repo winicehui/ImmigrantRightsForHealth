@@ -8,6 +8,11 @@
     color: #333333;
 }
 
+
+/* 
+CSS for Side Menu
+*/
+
 .sidebarMenu {
     display: inline !important;
 }
@@ -55,12 +60,16 @@
     color: #298FFB;
 }
 
+
+/* 
+CSS for Q+A Content
+*/
+
 .subTitle {
     color: #26415E;
-    /* text-align: center; */
-    /* margin: 25px; */
-    font-weight: bold;
-    font-size: 22px;
+    /* font-weight: bold; */
+    font-size: 1.8rem;
+    padding-bottom: 0.5rem;
 }
 
 .accordion>.title>i.minus.icon,
@@ -95,6 +104,15 @@
     font-size: 20px !important;
     line-height: 30px;
     margin-left: calc(1.5em + 25px);
+}
+
+a {
+    color: #298FFB;
+}
+
+a:hover {
+    color: #298FFB;
+    text-decoration: underline;
 }
 
 

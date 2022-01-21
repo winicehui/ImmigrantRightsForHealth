@@ -6,6 +6,6 @@ $(document).ready(() => {
     $('.ui.accordion').accordion({
         exclusive: false
     });
-    $('.accordion .title').first().addClass('active');
-    $('.accordion .content').first().addClass('active');
+    // $('.accordion .title').first().addClass('active');
+    // $('.accordion .content').first().addClass('active');
 });

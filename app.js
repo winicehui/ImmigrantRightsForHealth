@@ -107,25 +107,6 @@ app.use(lusca.xframe('SAMEORIGIN'));
 app.use(lusca.xssProtection(true));
 app.disable('x-powered-by');
 
-// app.use((req, res, next) => {
-//   res.locals.user = req.user;
-//   next();
-// });
-// app.use((req, res, next) => {
-//   // After successful login, redirect back to the intended page
-//   if (!req.user
-//     && req.path !== '/login'
-//     && req.path !== '/signup'
-//     && !req.path.match(/^\/auth/)
-//     && !req.path.match(/\./)) {
-//     req.session.returnTo = req.originalUrl;
-//   } else if (req.user
-//     && (req.path === '/account' || req.path.match(/^\/api/))) {
-//     req.session.returnTo = req.originalUrl;
-//   }
-//   next();
-// });
-
 // All of our static files that express will automatically server for us.
 app.use('/', express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
 app.use('/semantic', express.static(path.join(__dirname, 'semantic'), { maxAge: 31557600000 }));
@@ -170,41 +151,13 @@ app.get('/resources/:sectionValue?', async function(req, res) {
     resourcesInfo = JSON.parse(resourcesData.toString());
 
     const sectionTitles = [
-        'General',
-        'COVID-19'
+        'Topic'
     ];
 
     // if sub_section is not defined, it is defaulted to the first subsection value
     const activeSubsection = req.params.sectionValue || 'general_resources_for_immigrant_communities';
 
-    res.render('resources3', {
-        title: 'Resources',
-        headerInfo,
-        sectionTitles,
-        resourcesInfo,
-        activeSubsection
-    });
-});
-
-// route for resources2
-app.get('/resources2/:sectionValue?', async function(req, res) {
-    let headerInfo;
-    const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
-    headerInfo = JSON.parse(headerData.toString());
-
-    let resourcesInfo;
-    const resourcesData = await fs.readFileSync(`${__dirname}/public/json/resourcesInfo.json`);
-    resourcesInfo = JSON.parse(resourcesData.toString());
-
-    const sectionTitles = [
-        'General',
-        'COVID-19'
-    ];
-
-    // if sub_section is not defined, it is defaulted to the first subsection value
-    const activeSubsection = req.params.sectionValue || 'general_resources_for_immigrant_communities';
-
-    res.render('resources2', {
+    res.render('resources', {
         title: 'Resources',
         headerInfo,
         sectionTitles,
@@ -219,23 +172,23 @@ app.get('/QandA/:sectionValue?', async function(req, res) {
     const headerData = await fs.readFileAsync(`${__dirname}/public/json/headerInfo.json`);
     headerInfo = JSON.parse(headerData.toString());
 
-    let pregnancyQandAInfo;
-    const pregnancyQandAData = await fs.readFileAsync(`${__dirname}/public/json/pregnancyFAQInfo2.json`);
-    pregnancyQandAInfo = JSON.parse(pregnancyQandAData.toString());
+    let faqsInfo;
+    const faqsData = await fs.readFileAsync(`${__dirname}/public/json/faqsInfo.json`);
+    faqsInfo = JSON.parse(faqsData.toString());
 
     const sectionTitles = [
-        'Public Benefits',
-        'Pregnancy',
+        'Topic',
+        // 'Pregnancy',
         // 'COVID-19',
     ]
 
-    const activeSubsection = req.params.sectionValue || 'public_charge';
+    const activeSubsection = req.params.sectionValue || 'public_benefits';
 
     res.render('QandA2', {
         title: 'Questions and Answers',
         headerInfo,
         sectionTitles,
-        pregnancyQandAInfo,
+        faqsInfo,
         activeSubsection
     });
 });

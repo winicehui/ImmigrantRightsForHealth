@@ -1,14 +1,47 @@
 [{
-        "title": "General Resources for Immigrant Communities",
+        "title": "General Resources For Immigrant Communities",
         "value": "general_resources_for_immigrant_communities",
-        "section": "General",
+        "section": "Topic",
+        "lastUpdated": "18 January 2022",
         "content": [{
-                "title": "Immigrant Eligibility for \n Public Benefits in New York State",
+                "title": "Public Charge Safe to Use List",
+                "source": "Immigrant Legal Resource Center",
+                "url": "https://www.ilrc.org/sites/default/files/resources/pc_safe_to_use_list_may_2021.pdf",
+                "description": "A list of public benefits programs that do NOT trigger public charge and are safe to use.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "General Resources",
+                    "Federal Benefits"
+                ]
+            },
+            {
+                "title": "Frequently Asked Questions about Public Benefits",
+                "source": "RightsforHealth",
+                "url": "/QandA/public_benefits",
+                "description": "A list of frequently asked questions and answers about using public benefits.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "General Resources",
+                    "FAQ"
+                ]
+            },
+            {
+                "title": "Immigrant Eligibility for Public Benefits in New York State",
                 "source": "Empire Justice Center and The New York Immigration Coalition",
                 "url": "https://empirejustice.org/wp-content/uploads/2021/08/NYIC-Public-Benefits-Chart-Nov-2021.pdf",
                 "description": "A chart that lists federal benefits and New York State benefits based on immigration status. \n\nIt also identifies what benefits could potentially have public charge implications.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "General Resources",
+                    "New York State Benefits",
+                    "Federal Benefits",
+                    "Immigrant Eligibility"
                 ]
             },
             {
@@ -18,15 +51,25 @@
                 "description": "A chart that lists available federal benefits and public assistance programs based on immigration status. ",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "General Resources",
+                    "Federal Benefits"
                 ]
             },
             {
                 "title": "Public Benefits Maps",
                 "source": "National Immigrant Women’s Advocacy Project",
                 "url": "https://map.niwap.org/",
-                "description": "Interactive maps that list available public benefits based on immigrant’s state and immigration status.",
+                "description": "Interactive maps that list available public benefits based on an immigrant’s state and immigration status.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "General Resources",
+                    "Federal Benefits",
+                    "New York State Benefits",
+                    "Immigrant Eligibility"
                 ]
             },
             {
@@ -36,14 +79,29 @@
                 "description": "Charts that list available federal and state benefits based on an immigrant's state and immigration status.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "General Resources"
+                ]
+            }, {
+                "title": "National Immigration Legal Services Directory",
+                "source": "Immigration Advocates Network",
+                "url": "https://www.immigrationadvocates.org/nonprofit/legaldirectory/",
+                "description": "A directory of nonprofit organizations that provide free or low-cost immigration legal services, based on state, county, or detention facility.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "General Resources"
                 ]
             }
         ]
     },
     {
-        "title": "COVID-19 Resources for Immigrant Communities",
+        "title": "COVID-19 Resources",
         "value": "covid_resources_for_undocumented_immigrants",
-        "section": "COVID-19",
+        "section": "Topic",
+        "lastUpdated": "18 January 2022",
         "content": [{
                 "title": "Resources for Undocumented Immigrants During COVID-19 ",
                 "source": "Immigrant Rising",
@@ -51,6 +109,22 @@
                 "description": "A list of compiled resources for undocumented immigrants to help navigate the COVID-19 pandemic.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources"
+                ]
+            },
+            {
+                "title": "Frequently Asked Questions about COVID-19",
+                "source": "RightsforHealth",
+                "url": "/QandA/covid_public_benefits",
+                "description": "A list of frequently asked questions and answers about COVID-19.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "General Resources",
+                    "FAQ"
                 ]
             },
             {
@@ -60,15 +134,21 @@
                 "description": "A directory of free clinics that serve individuals without healthcare insurance, based on state.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources"
                 ]
             },
             {
                 "title": "Healthcare Access for Undocumented Immigrants \nDuring COVID-19",
                 "source": "United We Dream",
                 "url": "https://unitedwedream.org/2020/03/healthcare-access-for-undocumented-folks-in-the-time-of-covid19/",
-                "description": "A list of free/ low-cost/ community health care centers and other resources accessible to individuals without healthcare insurance, based on state. \n\nAlthough undocumented individuals are typically not eligible for health insurance, there are many free/ low-cost clinics that are accessible to individuals without healthcare insurance.",
+                "description": "A list of free/ low-cost/ community health care centers and other resources accessible to individuals without healthcare insurance (including undocumented individuals), based on state.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources"
                 ]
             },
             {
@@ -78,36 +158,26 @@
                 "description": "\"ICE does not conduct enforcement operations at medical facilities, except under extraordinary circumstances. Claims to the contrary are false and create unnecessary fear within communities. Individuals should continue to seek medical care.\"",
                 "languages": [
                     "English"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "COVID-19 and Immigration Law",
-        "value": "covid-19_and_immigration_law",
-        "section": "COVID-19",
-        "content": [{
-                "title": "USCIS COVID-19 Public Charge Notice",
-                "source": "U.S. Citizenship and Immigration Services (USCIS)",
-                "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/public-charge",
-                "description": "USCIS will not consider COVID-19 testing, treatment, or preventive care (including vaccines) as part of a public charge inadmissibility determination, even if paid for by a public benefit like Medicaid.",
-                "languages": [
-                    "English",
-                    "Spanish"
+                ],
+                "tags": [
+                    "COVID-19 Resources"
                 ]
             },
             {
-                "title": "Public Charge Rule and COVID-19 FAQs",
-                "source": "Government of the District of Columbia",
-                "url": "https://coronavirus.dc.gov/release/public-notice-public-charge-rule-faqs-covid-19-information",
-                "description": "A compiled list of frequently asked questions and answers about the new Aug 14, 2019 final public charge rule and COVID-19.",
+                "title": "USCIS COVID-19 Public Charge Notice",
+                "source": "U.S. Citizenship and Immigration Services (USCIS)",
+                "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/public-charge",
+                "description": "\"USCIS will not consider COVID-19 testing, treatment, or preventive care (including vaccines) as part of a public charge inadmissibility determination, even if paid for by a public benefit like Medicaid.\"",
                 "languages": [
                     "English",
-                    "Spanish",
-                    "Chinese",
-                    "Vietnamese"
+                    "Spanish"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Immigration Law"
                 ]
             },
+
             {
                 "title": "Understanding the Impact of the COVID-19 Relief Bills on Immigrant Communities",
                 "source": "National Immigration Law Center",
@@ -115,52 +185,23 @@
                 "description": "A policy brief that provides information on the impact of the COVID-19 relief package on low-income immigrants and more.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Immigration Law"
                 ]
             }, {
-                "title": "COVID-19 Stimulus Package: What CARES Act Rebates Mean for Immigrants",
-                "source": "The Wake Forest Law Review",
-                "url": "http://www.wakeforestlawreview.com/2020/04/covid-19-stimulus-package-what-cares-act-rebates-mean-for-immigrants/",
-                "description": "A report about the implications and consequences of the CARES Act rebates for immigrants.",
-                "languages": [
-                    "English"
-                ]
-            },
-            {
-                "title": "Recovery Rebates and Unemployment Compensation under the CARES Act: Immigration-Related Eligibility Criteria",
-                "source": "Congressional Research Service",
-                "url": "https://crsreports.congress.gov/product/pdf/LSB/LSB10442",
-                "description": "The Congressional Research Service report about immigration-related eligibility requirements for the two types of benefits established by the CARES Act: (1) the tax credits/rebates; and (2) the various forms of federally funded unemployment insurance benefits.",
-                "languages": [
-                    "English"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "COVID-19 and Health Insurance",
-        "value": "covid_19_and_health_insurance",
-        "section": "COVID-19",
-        "content": [{
-            "title": "How Uninsured Patients Can Get Help During the Covid-19 Pandemic",
-            "source": "PBS",
-            "url": "https://www.pbs.org/newshour/health/how-uninsured-patients-can-get-help-during-covid-19-pandemic",
-            "description": "This article explains how states are expanding eligibility so they can temporarily insure more of their residents during the pandemic. Private insurance companies are also asking Congress to open up enrollment on the federal exchange.",
-            "languages": [
-                "English"
-            ]
-        }]
-    },
-    {
-        "title": "COVID-19 and Domestic Workers",
-        "value": "covid_19_and_domestic_workers",
-        "section": "COVID-19",
-        "content": [{
                 "title": "Resources for Domestic Workers during COVID-19",
                 "source": "National Domestic Workers Alliance",
                 "url": "https://membership.domesticworkers.org/coronavirus/",
                 "description": "A COVID-19 related resources for domestic workers (ex: working safely, getting support, vaccines).",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Immigration Law",
+                    "Domestic Workers"
                 ]
             },
             {
@@ -170,6 +211,11 @@
                 "description": "Fair Practices for Employers.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Immigration Law",
+                    "Domestic Workers"
                 ]
             },
             {
@@ -179,6 +225,106 @@
                 "description": "The National Domestic Workers Alliance is providing emergency assistance for domestic workers that enables them to stay home and healthy.",
                 "languages": [
                     "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Immigration Law",
+                    "Domestic Workers"
+                ]
+            },
+            {
+                "title": "Recovery Rebates and Unemployment Compensation under the CARES Act: Immigration-Related Eligibility Criteria",
+                "source": "Congressional Research Service",
+                "url": "https://crsreports.congress.gov/product/pdf/LSB/LSB10442",
+                "description": "The Congressional Research Service report about immigration-related eligibility requirements for the two types of benefits established by the CARES Act: (1) the tax credits/rebates; and (2) the various forms of federally funded unemployment insurance benefits.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Immigration Law"
+                ]
+            },
+            {
+                "title": "How Uninsured Patients Can Get Help During the Covid-19 Pandemic",
+                "source": "PBS",
+                "url": "https://www.pbs.org/newshour/health/how-uninsured-patients-can-get-help-during-covid-19-pandemic",
+                "description": "This article explains how states are expanding eligibility so they can temporarily insure more of their residents during the pandemic. Private insurance companies are also asking Congress to open up enrollment on the federal exchange.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Immigration Law",
+                    "Health Insurance"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Pregnancy Resources",
+        "value": "pregnancy_resources",
+        "section": "Topic",
+        "lastUpdated": "18 January 2022",
+        "content": [{
+                "title": "Frequently Asked Questions about Pregnancy",
+                "source": "RightsforHealth",
+                "url": "/QandA/pregnancy",
+                "description": "A list of frequently asked questions and answers about pregnancy, including prepgnancy planning, care during pregnancy, and post-pregnancy care.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "General Resources",
+                    "FAQ"
+                ]
+            },
+            {
+                "title": "Managing Weight Gain during Pregnancy",
+                "source": "New York State Department of Health",
+                "url": "https://www.health.ny.gov/publications/2025.pdf",
+                "description": "A pamphlet outlining suggestions to manage weight gain during pregnancy and to prevent maternal morbidity and mortality.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "Pregnancy Resources"
+                ]
+            },
+            {
+                "title": "Staying Healthy and Safe During Pregnancy",
+                "source": "Office of Women's Health, U.S. Department of Health & Human Services",
+                "url": "https://www.womenshealth.gov/pregnancy/youre-pregnant-now-what/staying-healthy-and-safe",
+                "description": "A list of do's and don'ts on how how to stay healthy and safe during pregnancy, listed by topic.\n\n Topics include \"Eating for Two\", \"Weight Gain\", \"Vitamins and Minerals\", and more.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "Pregnancy Resources"
+                ]
+            },
+            {
+                "title": "Find Free or Reduced Prental Care and Health Assistance Programs",
+                "source": "U.S. Department of Health & Human Services",
+                "url": "https://www.hhs.gov/answers/health-insurance-reform/are-there-health-assistance-programs-for-pregnant-women-mothers-children/index.html",
+                "description": "Guidance on how to find health assistance programs for pregnant women, mothers, and children.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "Pregnancy Resources"
+                ]
+            },
+            {
+                "title": "Prenatal Care in New York State",
+                "source": "New York State Department of Health",
+                "url": "https://www.health.ny.gov/community/pregnancy/health_care/prenatal/#about",
+                "description": "A list of helpful resources for seeking prenatal care in New York State.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "Pregnancy Resources"
                 ]
             }
         ]

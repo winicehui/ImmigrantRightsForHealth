@@ -2,15 +2,20 @@ extends layout
 
 block content
     .QandA
+        - var activeSubsectionObject = faqsInfo.find(sub_section => {return sub_section.value===activeSubsection})
+        h2.boldText.pageTitle Questions and Answers
+        h4 This page lists commonly asked questions and answers about public benefits that are available to immigrants. It has been compiled by the RightsforHealth team.
+        h4 You can browse by topic.
         .ui.grid.stackable.two.column.alignItems-center
             .column.eight.wide
-                h2.boldText.pageTitle Questions and Answers
-            .column.eight.wide.alignItems-center
+            .column.eight.wide.alignItems-center.justifyContent-end
                 h5
-                    | Last Updated: 07 Jan 2022 | 
                     i.print.icon
-                    a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page 
-        - var activeSubsectionObject = pregnancyQandAInfo.find(sub_section => {return sub_section.value===activeSubsection})
+                    a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page
+                    |   | 
+                    a.darkBlueLink.underlineText.span.collapseText(onclick="onExpandAll()") Expand All 
+        br
+        br
         .ui.grid.centered 
             .column.four.wide.sidebarMenu
                 .ui.menu.fluid.vertical
@@ -18,7 +23,7 @@ block content
                         .item(class={addBorderRadius: index===0})
                             h3.section_title(class={addBorderRadius: index===0}) 
                                 | #{sectionTitle}
-                            - var sub_sections = pregnancyQandAInfo.filter(sub_section => {return sub_section.section===sectionTitle})
+                            - var sub_sections = faqsInfo.filter(sub_section => {return sub_section.section===sectionTitle})
                             if sub_sections.length
                                 .subsection
                                     each sub_section in sub_sections
@@ -36,7 +41,7 @@ block content
                                     i.dropdown.icon
                                     | #{sectionTitle}
                             .content(class={active: isActiveSection})
-                                - var sub_sections = pregnancyQandAInfo.filter(sub_section => {return sub_section.section===sectionTitle})
+                                - var sub_sections = faqsInfo.filter(sub_section => {return sub_section.section===sectionTitle})
                                 .subsection
                                     each sub_section in sub_sections
                                         - var isActiveSubSection = sub_section["value"]===activeSubsectionObject["value"]
@@ -44,25 +49,67 @@ block content
                                             p.subsection_title(class={active: isActiveSubSection}) 
                                                 | #{sub_section["title"]}
             .column.twelve.wide
-                h2.boldText.subTitle #{activeSubsectionObject["title"]}
                 .ui.accordion.QandA_div
-                    each QandA in activeSubsectionObject["content"]
-                        .title
-                            i.icon(class="plus")
-                            i.icon(class="minus")
-                            | #{QandA["question"]}
-                        .content 
-                            | !{QandA["answer"].replace(/\n/g, '<br/>')}
-                        .ui.divider
-                        //- .QandA_div
-                        //-     p.boldText.QandA_text.question #{QandA["question"]}
-                        //-     p.QandA_text #{QandA["answer"]}
+                    each QandAContentList, QandASubTopic in activeSubsectionObject["content"]
+                        h3.subTitle #{QandASubTopic} 
+                        each QandA in QandAContentList
+                            .title
+                                i.icon(class="plus")
+                                i.icon(class="minus")
+                                | #{QandA["question"]}
+                            .content 
+                                - var hyperlink = QandA["answer"].match(/(?<=<a>)(.*)(?=<\/a>)/g)
+                                | !{QandA["answer"].replace(/\n/g, '<br/>').replace(/<a>/g, '<a target="_blank" href='+ hyperlink +'>').replace(/<\/a>/g, '</a>')}
+                                if (QandA["question"]=="Which prenatal vitamins should I be taking?")
+                                    table.ui.celled.table
+                                        thead 
+                                            tr 
+                                                th.four.wide Nutrient 
+                                                th.twelve.wide How much pregnant women need each day 
+                                        tbody 
+                                            tr 
+                                                td Folic Acid 
+                                                td 400 to 800 micrograms (mcg) (0.4 to 0.8 mg) in the early stages of pregnancy, which is why all women who are capable of pregnancy should take 400 to 800 mcg of folic acid daily. Pregnant women should continue taking folic acid throughout pregnancy.
+                                            tr 
+                                                td Iron 
+                                                td 27 milligrams (mg)
+                                            tr 
+                                                td Calcium 
+                                                td 1,000 milligrams (mg); 1,300 mg if 18 or younger
+                                            tr 
+                                                td Vitamin A 
+                                                td 	770 micrograms (mcg); 750 mcg if 18 or younger
+                                            tr 
+                                                td Vitamin B-12 
+                                                td 2.6 micrograms (mcg)
+                                    p More information can be found 
+                                        a.lightblue(href="https://www.womenshealth.gov/pregnancy/youre-pregnant-now-what/staying-healthy-and-safe" target="_blank") here.
+                            .ui.divider
+                        br
+                        br
+        h5.alignItems-center.justifyContent-end Page Last Updated: #{activeSubsectionObject["lastUpdated"]}
     
 block styles 
     link(rel='stylesheet', href='/css/QandA2.css')
 
 block scripts 
     script. 
+        var expandAll = false;
         function onPrint(){
             window.print();
+        }
+        function onExpandAll(){
+            if (!expandAll){
+                $('.ui.accordion.QandA_div .title').each(function(i){
+                    $(this).parent().accordion('open',i);
+                 });
+                expandAll = true;
+                $('.collapseText').html("Collapse All");
+            } else {
+                $('.ui.accordion.QandA_div .title').each(function(i){
+                    $(this).parent().accordion('close',i);
+                });
+                expandAll = false;
+                $('.collapseText').html("Expand All");
+            }
         }

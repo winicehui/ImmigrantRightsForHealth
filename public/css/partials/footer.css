@@ -1,7 +1,7 @@
 .footer {
     position: absolute;
     bottom: 0;
-    height: 90px;
+    height: 150px;
     width: 100%;
     padding: 0 30px;
     background-color: #26415E;
@@ -21,9 +21,22 @@
 }
 
 .emailLink {
-    text-decoration: underline;
+    font-style: italic;
+    color: #ffffff;
 }
 
 .emailLink:hover {
-    color: #298FFB;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.footer>.ui.grid>.column {
+    background-color: #26415E;
+    color: white;
+}
+
+.footer>.ui.grid>.column>p {
+    margin: 0px;
+    font-size: 19px;
+    line-height: 1.5em;
 }

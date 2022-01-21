@@ -21,7 +21,7 @@ div {
     justify-content: flex-start;
     align-items: center;
     margin: 90px 0px 0px 0px;
-    padding: 0px 0px 90px 0px;
+    padding: 0px 0px 130px 0px;
 }
 
 .primaryColor {
@@ -38,6 +38,10 @@ div {
 
 .underlineText {
     text-decoration: underline !important;
+}
+
+.italicText {
+    font-style: italic;
 }
 
 .centerText {
@@ -57,15 +61,22 @@ div {
     justify-content: center;
 }
 
+.justifyContent-end {
+    justify-content: end;
+}
+
 .alignItems-center {
     display: flex !important;
     align-items: center;
     align-content: center;
-    justify-content: end;
 }
 
 .noMargin {
     margin: 0px;
+}
+
+.noPadding {
+    padding: 0px;
 }
 
 

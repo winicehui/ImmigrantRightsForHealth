@@ -2,8 +2,77 @@ extends layout
 
 block content
     .team 
-        h2.boldText.pageTitle Team
-        h4 RightsForHealth was developed through collaborative research among a group of researchers, physicians and lawyers from (1) Weill Cornell Center for Human Rights, Weill Cornell Medicine, (2) Social Media Lab, Department of Communication, College of Agriculture and Life Sciences, Cornell University, (3) Cornell Law School, Cornell University, and (4) Bronfenbrenner Center for Translational Research, College of Human Ecology, Cornell University
+        h2.boldText.pageTitle Meet The Team
+        h4 
+            span.italicText RightsforHealth 
+            | was developed through collaborative research among a group of researchers, doctors, and lawyers at 
+            span.boldText Cornell University
+            | , 
+            span.boldText Weill Cornell Medicine
+            | , and 
+            span.boldText Cornell Law School
+            | .
+        br
+        br
+        br
+        br
+        .ui.grid.two.column.stackable.relaxed
+            .column.six.wide
+                a(href="https://hrilab.weill.cornell.edu/" target="_blank")
+                    img.image(src="/images/hril_logo.png")
+            .column.ten.wide
+                p Our 
+                    b medical research group 
+                    | is based in the 
+                    a(href="https://hrilab.weill.cornell.edu/" target="_blank") Human Rights Impact Lab
+                    | , Department of Anesthesiology at Weill Cornell Medicine, New York, NY. 
+        br
+        br
+        br
+        br
+        br
+        .ui.grid.two.column.stackable.relaxed
+            .column.six.wide
+                a(href="https://socialmedialab.cornell.edu/" target="_blank").justifyContent-center 
+                    img.image-80(src="/images/sml_logo.png")
+            .column.ten.wide
+                p Our 
+                    b digital research group 
+                    | is based in the 
+                    a(href="https://socialmedialab.cornell.edu/" target="_blank") Cornell Social Media Lab
+                    | , Department of Communication at Cornell University, Ithaca, NY.
+        br
+        br
+        br
+        br
+        br
+        .ui.grid.two.column.stackable.relaxed
+            .column.six.wide
+                a(href="https://www.lawschool.cornell.edu/" target="_blank")
+                    img.image(src="/images/cornelllawschool_logo.svg")
+            .column.ten.wide
+                p Our 
+                    b immigration law group 
+                    | is based in the 
+                    a(href="https://www.lawschool.cornell.edu/" target="_blank") Cornell Law School
+                    | , Ithaca, NY.
+        br
+        br
+        br
+        br
+        br
+        .ui.grid.two.column.stackable.relaxed
+            .column.six.wide
+                a(href="https://bctr.cornell.edu/projects/act-for-youth/" target="_blank").justifyContent-center 
+                    img.image-80(src="/images/brofenbrennercenter_logo.png")
+            .column.ten.wide
+                p Our 
+                    b social science group 
+                    | is housed in the 
+                    a(href="https://bctr.cornell.edu/projects/act-for-youth/" target="_blank") ACT for Youth Center for Community Action
+                    | , Bronfenbrenner Center for Translational Research and in the 
+                    a(href="https://socialmedialab.cornell.edu/" target="_blank") Cornell Social Media Lab
+                    | , Department of Communication at Cornell University, Ithaca, NY.
 
 block styles 
     link(rel='stylesheet', href='/css/team.css')
