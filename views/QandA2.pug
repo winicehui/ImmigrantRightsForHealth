@@ -57,9 +57,9 @@ block content
                                 i.icon(class="plus")
                                 i.icon(class="minus")
                                 | #{QandA["question"]}
-                            .content 
-                                - var hyperlink = QandA["answer"].match(/(?<=<a>)(.*)(?=<\/a>)/g)
-                                | !{QandA["answer"].replace(/\n/g, '<br/>').replace(/<a>/g, '<a target="_blank" href='+ hyperlink +'>').replace(/<\/a>/g, '</a>')}
+                            .content
+                                -var replaceLinks = QandA["answer"].replace(/<a>(.*)<\/a>/g, (match, p1)=>{ return '<a target="_blank" href='+ p1 +'>'+p1+'</a>'})
+                                | !{replaceLinks.replace(/\n/g, '<br/>')}
                                 if (QandA["question"]=="Which prenatal vitamins should I be taking?")
                                     table.ui.celled.table
                                         thead 
