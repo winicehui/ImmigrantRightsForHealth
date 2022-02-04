@@ -110,7 +110,8 @@ a {
     color: #298FFB;
 }
 
-.QandA_div>.content>a:hover {
+.QandA_div>.content>a:hover,
+.QandA_div>.content>p>a:hover {
     color: #298FFB;
     text-decoration: underline;
 }

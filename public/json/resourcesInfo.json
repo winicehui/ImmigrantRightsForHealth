@@ -101,24 +101,12 @@
         "title": "COVID-19 Resources",
         "value": "covid_resources_for_undocumented_immigrants",
         "section": "Topic",
-        "lastUpdated": "18 January 2022",
+        "lastUpdated": "2 February 2022",
         "content": [{
-                "title": "Resources for Undocumented Immigrants During COVID-19 ",
-                "source": "Immigrant Rising",
-                "url": "https://immigrantsrising.org/resource/tangible-support-for-immigrant-communities-during-covid-19/ ",
-                "description": "A list of compiled resources for undocumented immigrants to help navigate the COVID-19 pandemic.",
-                "languages": [
-                    "English"
-                ],
-                "tags": [
-                    "COVID-19 Resources"
-                ]
-            },
-            {
                 "title": "Frequently Asked Questions about COVID-19",
                 "source": "RightsforHealth",
                 "url": "/QandA/covid_public_benefits",
-                "description": "A list of frequently asked questions and answers about COVID-19.",
+                "description": "A list of frequently asked questions and answers about COVID-19 and immigrants.",
                 "languages": [
                     "English"
                 ],
@@ -128,10 +116,23 @@
                 ]
             },
             {
-                "title": "Free Medical Clinic Directory",
-                "source": "Free Clinic Directory",
-                "url": "https://freeclinicdirectory.org/",
-                "description": "A directory of free clinics that serve individuals without healthcare insurance, based on state.",
+                "title": "Tangible Support for Undocumented Communities",
+                "source": "Informed Immigrant",
+                "url": "https://www.informedimmigrant.com/guides/coronavirus/",
+                "description": "Directory of resources for undocumented individuals in each state.",
+                "languages": [
+                    "English",
+                    "Spanish"
+                ],
+                "tags": [
+                    "COVID-19 Resources"
+                ]
+            },
+            {
+                "title": "Healthcare Access for Undocumented Immigrants",
+                "source": "United We Dream",
+                "url": "https://unitedwedream.org/2020/03/healthcare-access-for-undocumented-folks-in-the-time-of-covid19/",
+                "description": "Though undocumented individuals are typically not eligible for health insurance, many free/low-cost clinics serve the uninsured.",
                 "languages": [
                     "English"
                 ],
@@ -140,10 +141,10 @@
                 ]
             },
             {
-                "title": "Healthcare Access for Undocumented Immigrants \nDuring COVID-19",
-                "source": "United We Dream",
-                "url": "https://unitedwedream.org/2020/03/healthcare-access-for-undocumented-folks-in-the-time-of-covid19/",
-                "description": "A list of free/ low-cost/ community health care centers and other resources accessible to individuals without healthcare insurance (including undocumented individuals), based on state.",
+                "title": "Free Medical Clinic Directory",
+                "source": "Free Clinic Directory",
+                "url": "https://freeclinicdirectory.org/",
+                "description": "Directory of free clinics that serve the uninsured.",
                 "languages": [
                     "English"
                 ],
@@ -155,9 +156,19 @@
                 "title": "ICE Will Not Make Arrests at Hospitals",
                 "source": "U.S. Immigration and Customs Enforcement (U.S. ICE)",
                 "url": "https://www.ice.gov/coronavirus",
-                "description": "\"ICE does not conduct enforcement operations at medical facilities, except under extraordinary circumstances. Claims to the contrary are false and create unnecessary fear within communities. Individuals should continue to seek medical care.\"",
+                "description": "\"ICE will not carry out enforcement operations at or near health care facilities, such as hospitals,doctors' offices, accredited health clinics, and extraordinary of circumstances.Individuals should not avoid seeking medical care because they fear civil immigration enforcement.\"",
                 "languages": [
-                    "English"
+                    "English",
+                    "Arabic",
+                    "Bengali",
+                    "Chinese",
+                    "Haitian-Creole",
+                    "Italian",
+                    "Korean",
+                    "Polish",
+                    "Russian",
+                    "Spanish",
+                    "Yiddish"
                 ],
                 "tags": [
                     "COVID-19 Resources"
@@ -166,8 +177,8 @@
             {
                 "title": "USCIS COVID-19 Public Charge Notice",
                 "source": "U.S. Citizenship and Immigration Services (USCIS)",
-                "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/public-charge",
-                "description": "\"USCIS will not consider COVID-19 testing, treatment, or preventive care (including vaccines) as part of a public charge inadmissibility determination, even if paid for by a public benefit like Medicaid.\"",
+                "url": "https://www.uscis.gov/green-card/green-card-processes-and-procedures/public-charge/public-charge-resources",
+                "description": "\"USCIS does not consider vaccinations when making public charge inadmissibility determinations. USCIS encourages everyone, including noncitizens, to seek necessary medical care, including treatment or preventive services for COVID-19. You may seek pandemic-related benefits and services (including food assistance, housing programs, and others) for which you are eligible — without fear of negative consequences to your immigration status.\"",
                 "languages": [
                     "English",
                     "Spanish"
@@ -177,66 +188,53 @@
                     "Immigration Law"
                 ]
             },
-
             {
-                "title": "Understanding the Impact of the COVID-19 Relief Bills on Immigrant Communities",
-                "source": "National Immigration Law Center",
-                "url": "https://www.nilc.org/wp-content/uploads/2020/04/COVID19-relief-bills-understanding-key-provisions.pdf ",
-                "description": "A policy brief that provides information on the impact of the COVID-19 relief package on low-income immigrants and more.",
+                "title": "New York Forward",
+                "source": "New York Forward",
+                "url": "https://forward.ny.gov/",
+                "description": "Coronavirus updates for New York State.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources"
+                ]
+            },
+            {
+                "title": "Public Charge FAQs COVID-19",
+                "source": "Government of the District of Columbia",
+                "url": "https://coronavirus.dc.gov/release/public-notice-public-charge-rule-faqs-covid-19-information-0",
+                "description": "A list of frequently asked questions and answers about COVID-19, public charge, and immigrants.",
+                "languages": [
+                    "English",
+                    "Chinese",
+                    "Spanish",
+                    "French",
+                    "Vietnamese"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Immigration Law"
+                ]
+            },
+            {
+                "title": "Immigrant Eligibility for Public Programs During COVID-19",
+                "source": "Protecting Immigrant Families",
+                "url": "https://protectingimmigrantfamilies.org/immigrant-eligibility-for-public-programs-during-covid-19/",
+                "description": "A general overview of federal public programs available to individuals and families during COVID-19.",
                 "languages": [
                     "English"
                 ],
                 "tags": [
                     "COVID-19 Resources",
                     "Immigration Law"
-                ]
-            }, {
-                "title": "Resources for Domestic Workers during COVID-19",
-                "source": "National Domestic Workers Alliance",
-                "url": "https://membership.domesticworkers.org/coronavirus/",
-                "description": "A COVID-19 related resources for domestic workers (ex: working safely, getting support, vaccines).",
-                "languages": [
-                    "English"
-                ],
-                "tags": [
-                    "COVID-19 Resources",
-                    "Immigration Law",
-                    "Domestic Workers"
-                ]
-            },
-            {
-                "title": "Fair Practices for Employers",
-                "source": "Hand in Hand: The Domestic Employers Network",
-                "url": "https://domesticemployers.org/support-during-the-coronavirus-pandemic/#fair-practices-for-employers",
-                "description": "Fair Practices for Employers.",
-                "languages": [
-                    "English"
-                ],
-                "tags": [
-                    "COVID-19 Resources",
-                    "Immigration Law",
-                    "Domestic Workers"
-                ]
-            },
-            {
-                "title": "Resources for Domestic Workers",
-                "source": "National Domestic Workers Alliance",
-                "url": "https://domesticworkers.org/?fbclid=IwAR0dni3UgcCbjrBGbCYWJdSYBol15mgHOro",
-                "description": "The National Domestic Workers Alliance is providing emergency assistance for domestic workers that enables them to stay home and healthy.",
-                "languages": [
-                    "English"
-                ],
-                "tags": [
-                    "COVID-19 Resources",
-                    "Immigration Law",
-                    "Domestic Workers"
                 ]
             },
             {
                 "title": "Recovery Rebates and Unemployment Compensation under the CARES Act: Immigration-Related Eligibility Criteria",
                 "source": "Congressional Research Service",
                 "url": "https://crsreports.congress.gov/product/pdf/LSB/LSB10442",
-                "description": "The Congressional Research Service report about immigration-related eligibility requirements for the two types of benefits established by the CARES Act: (1) the tax credits/rebates; and (2) the various forms of federally funded unemployment insurance benefits.",
+                "description": "Congressional Research Service report about immigration-related eligibility requirements for the two types of benefits established by the CARES Act: (1) the tax credits/rebates; and (2) the various forms of federally funded unemployment insurance benefits.",
                 "languages": [
                     "English"
                 ],
@@ -246,17 +244,55 @@
                 ]
             },
             {
-                "title": "How Uninsured Patients Can Get Help During the Covid-19 Pandemic",
-                "source": "PBS",
-                "url": "https://www.pbs.org/newshour/health/how-uninsured-patients-can-get-help-during-covid-19-pandemic",
-                "description": "This article explains how states are expanding eligibility so they can temporarily insure more of their residents during the pandemic. Private insurance companies are also asking Congress to open up enrollment on the federal exchange.",
+                "title": "COVID-19 Care for Uninsured Individuals",
+                "source": "U.S. Department of Health and Human Services (HHS)",
+                "url": "https://www.hhs.gov/coronavirus/covid-19-care-uninsured-individuals/index.html",
+                "description": "This article provides resources to help uninsured individuals find no-cost COVID-19 testing, treatment, and vaccines.",
                 "languages": [
                     "English"
                 ],
                 "tags": [
                     "COVID-19 Resources",
-                    "Immigration Law",
                     "Health Insurance"
+                ]
+            },
+            {
+                "title": "Resources for Domestic Workers during COVID-19",
+                "source": "National Domestic Workers Alliance",
+                "url": "https://membership.domesticworkers.org/coronavirus/",
+                "description": "COVID-19 related resources for domestic workers.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Domestic Workers"
+                ]
+            },
+            {
+                "title": "Work Safely",
+                "source": "National Domestic Workers Alliance",
+                "url": "https://membership.domesticworkers.org/coronavirus/work-safely/",
+                "description": "The National Domestic Workers Alliance provides infromation on keeping yourself and your clients safe at work.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Domestic Workers"
+                ]
+            },
+            {
+                "title": "Fair Practices for Employers",
+                "source": "Hand in Hand: The Domestic Employers Network",
+                "url": "https://domesticemployers.org/support-during-the-coronavirus-pandemic/",
+                "description": "Support for fair practices for employers during COVID-19.",
+                "languages": [
+                    "English"
+                ],
+                "tags": [
+                    "COVID-19 Resources",
+                    "Domestic Workers"
                 ]
             }
         ]

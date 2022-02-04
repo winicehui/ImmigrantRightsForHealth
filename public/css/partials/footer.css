@@ -1,7 +1,7 @@
 .footer {
     position: absolute;
     bottom: 0;
-    height: 150px;
+    height: 220px;
     width: 100%;
     padding: 0 30px;
     background-color: #26415E;
@@ -21,8 +21,8 @@
 }
 
 .emailLink {
-    font-style: italic;
     color: #ffffff;
+    text-decoration: underline;
 }
 
 .emailLink:hover {

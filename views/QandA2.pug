@@ -4,14 +4,16 @@ block content
     .QandA
         - var activeSubsectionObject = faqsInfo.find(sub_section => {return sub_section.value===activeSubsection})
         h2.boldText.pageTitle Questions and Answers
-        h4 This page lists commonly asked questions and answers about public benefits that are available to immigrants. It has been compiled by the RightsforHealth team.
+        h4 This page lists commonly asked questions and answers about public benefits that are available to immigrants. It has been compiled by the
+            span.italicText RightsforHealth 
+            | team. 
         h4 You can browse by topic.
         .ui.grid.stackable.two.column.alignItems-center
             .column.eight.wide
             .column.eight.wide.alignItems-center.justifyContent-end
                 h5
                     i.print.icon
-                    a.darkBlueLink.underlineText.span(onclick="onPrint()") Print Page
+                    a.darkBlueLink.underlineText.span(onclick='onPrint("'+activeSubsectionObject.pdf_print+'")') Print Page
                     |   | 
                     a.darkBlueLink.underlineText.span.collapseText(onclick="onExpandAll()") Expand All 
         br
@@ -59,7 +61,7 @@ block content
                                 | #{QandA["question"]}
                             .content
                                 -var replaceLinks = QandA["answer"].replace(/<a>(.*)<\/a>/g, (match, p1)=>{ return '<a target="_blank" href='+ p1 +'>'+p1+'</a>'})
-                                | !{replaceLinks.replace(/\n/g, '<br/>')}
+                                | !{replaceLinks.replace(/\n/g, '<br/>').replace(/<u>/g, '<span class="underlineText">').replace(/<\/u>/g, '</span>')}
                                 if (QandA["question"]=="Which prenatal vitamins should I be taking?")
                                     table.ui.celled.table
                                         thead 
@@ -83,7 +85,7 @@ block content
                                                 td Vitamin B-12 
                                                 td 2.6 micrograms (mcg)
                                     p More information can be found 
-                                        a.lightblue(href="https://www.womenshealth.gov/pregnancy/youre-pregnant-now-what/staying-healthy-and-safe" target="_blank") here.
+                                        a(href="https://www.womenshealth.gov/pregnancy/youre-pregnant-now-what/staying-healthy-and-safe" target="_blank") here.
                             .ui.divider
                         br
                         br
@@ -96,9 +98,9 @@ block styles
 block scripts 
     script. 
         var expandAll = false;
-        function onPrint(){
-            window.print();
-        }
+        //- function onPrint(){
+        //-     window.print();
+        //- }
         function onExpandAll(){
             if (!expandAll){
                 $('.ui.accordion.QandA_div .title').each(function(i){
@@ -113,4 +115,22 @@ block scripts
                 expandAll = false;
                 $('.collapseText').html("Expand All");
             }
+        }
+    script.  
+        // from https://stackoverflow.com/questions/16239513/print-pdf-directly-from-javascript
+        function onPrint(url) {
+            var iframe = this._printIframe;
+            if (!this._printIframe) {
+                iframe = this._printIframe = document.createElement('iframe');
+                document.body.appendChild(iframe);
+
+                iframe.style.display = 'none';
+                iframe.onload = function() {
+                setTimeout(function() {
+                    iframe.focus();
+                    iframe.contentWindow.print();
+                }, 1);
+                };
+            }
+            iframe.src = url;
         }

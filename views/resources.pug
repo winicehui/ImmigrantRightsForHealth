@@ -4,7 +4,9 @@ block content
     .resources
         h2.boldText.pageTitle Resources
         //- h4 RightsForHealth is dedicated to increasing access to resources for immigrant communities in New York State. 
-        h4 This resource library contains links to helpful and relevant external resources for immigrant communities. The resources have been compiled and checked for accuracy by the RightsforHealth team. 
+        h4 This resource library contains links to helpful and relevant external resources for immigrant communities. The resources have been compiled and checked for accuracy by the 
+            span.italicText RightsforHealth 
+            | team. 
         h4 You can browse by topic.
         //- h4 You can browse by our overall areas of focus, research methodology, type of media we examine, and the specific topics we study. If you are interested in any studies that you cannot access here, please contact info@commhsp.org.
         br
@@ -42,7 +44,7 @@ block content
                                             p.subsection_title(class={active: isActiveSubSection}) 
                                                 | #{sub_section["title"]}
             .column.twelve.wide
-                - var language_colortags = { 'English': 'blue', 'Spanish': 'orange', 'Chinese': 'red', 'Vietnamese': 'purple'}
+                //- - var language_colortags = { 'English': 'blue', 'Spanish': 'orange', 'Chinese': 'red', 'Vietnamese': 'purple'}
                 h3.boldText.subTitle #{activeSubsectionObject["title"]}
                 .ui.grid.stackable.two.column.relaxed
                     each resource in activeSubsectionObject["content"]
@@ -62,10 +64,10 @@ block content
                                 //-     i.add.icon 
                                 //-     | Read More
                                 .content.extra
-                                    each language in resource["languages"]
-                                        .ui.label(class=language_colortags[language]) #{language}
-                                    //- each tag in resource["tags"]
-                                    //-     .ui.label.blue #{tag}
+                                    //- each language in resource["languages"]
+                                    //-     .ui.label(class=language_colortags[language]) #{language}
+                                    each tag in resource["languages"]
+                                        .ui.label.blue #{tag}
                 //- .ui.cards.doubling.two
                 //-     each resource in activeSubsectionObject["content"]
                 //-             a.ui.fluid.card(href=resource["url"]).resourceCard
@@ -82,8 +84,10 @@ block content
                 //-                 .content.extra
                 //-                     each language in resource["languages"]
                 //-                         .ui.label(class=language_colortags[language]) #{language}
-                                    //- each tag in resource["tags"]
-                                    //-     .ui.label.blue #{tag}
+                //-                     each tag in resource["tags"]
+                //-                         .ui.label.blue #{tag}
+        br
+        br
         h5.alignItems-center.justifyContent-end Page Last Updated: #{activeSubsectionObject["lastUpdated"]}
         h5.alignItems-center.justifyContent-end.noMargin This site does not contain medical or legal advice. The information is provided for general purposes only and is not a substitute for professional advice. 
 
