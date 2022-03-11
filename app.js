@@ -34,8 +34,8 @@ const app = express();
  * Express configuration.
  */
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'views'));
 // Compresses all responses: Compression decreases the downloadable amount of data that is served to users. Through the use of compression, we can improve the performance of the Node.js application as our payload size is reduced drastically.
 app.use(compression());
 // https://www.npmjs.com/package/node-sass-middleware Put JS, CSS, HTML files below the public directory, and they will be compressed.
