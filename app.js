@@ -10,10 +10,8 @@ const chalk = require('chalk');
 const errorHandler = require('errorhandler');
 const lusca = require('lusca');
 const dotenv = require('dotenv');
-const MongoStore = require('connect-mongo')(session);
 const flash = require('express-flash');
 const path = require('path');
-const mongoose = require('mongoose');
 const passport = require('passport');
 const sass = require('node-sass-middleware');
 
@@ -26,19 +24,6 @@ fs.readFileAsync = util.promisify(fs.readFile);
  * Load environment variables from .env file, where API keys and passwords are configured.
  */
 dotenv.config({ path: '.env' });
-
-/**
- * Controllers (route handlers).
- */
-// const homeController = require('./controllers/home');
-// const userController = require('./controllers/user');
-// const apiController = require('./controllers/api');
-// const contactController = require('./controllers/contact');
-
-/**
- * API keys and Passport configuration.
- */
-// const passportConfig = require('./config/passport');
 
 /**
  * Create Express server.
@@ -67,10 +52,6 @@ app.use(session({
     saveUninitialized: true,
     secret: process.env.SESSION_SECRET,
     cookie: { maxAge: 1209600000 }, // two weeks in milliseconds
-    // store: new MongoStore({
-    //   url: process.env.MONGODB_URI,
-    //   autoReconnect: true,
-    // })
 }));
 app.use(passport.initialize());
 app.use(passport.session());
