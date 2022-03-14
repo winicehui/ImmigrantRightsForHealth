@@ -50,7 +50,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({
     resave: true,
     saveUninitialized: true,
-    secret: process.env.SESSION_SECRET,
+    secret: 'secret_key',
     cookie: { maxAge: 1209600000 }, // two weeks in milliseconds
 }));
 app.use(passport.initialize());
