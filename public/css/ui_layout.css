@@ -2,12 +2,17 @@
 
 /* ---- GENERAL ---- */
 
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
 html,
 body,
 div {
     padding: 0em;
     margin: 0em;
-    font-family: Helvetica, Arial, sans-serif;
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
     background-color: #ffffff;
     -webkit-print-color-adjust: exact !important;
     /* to enable background printing in Chrome*/

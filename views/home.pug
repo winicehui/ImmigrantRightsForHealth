@@ -4,12 +4,24 @@ block content
   .landingPic
     img(src='/images/landingpage/landingpage.jpg').landingPic_picture
     .landingPic_text
-      h1.boldText.landingPic_title IMMIGRANT RIGHTS 
-        span.avoidWrap FOR HEALTH
-      p.landingPic_description 
-        | This website provides updated and accurate resources for immigrants who are seeking healthcare in New York. Information provided here is useful to both immigrant patients and their healthcare providers.
-      a(href="/resources").ui.button.primary.landingPic_button Search Resources
+      h1.boldText.landingPic_title Healthcare Resources for 
+      h1.boldText.landingPic_title Migrant Patients
+      p.landingPic_description Get updated and accurate resources about seeking healthcare in New York state (based on your legal immigration status) on this website. 
+      //- p.landingPic_description(style="margin-top:0px") Information provided here is useful for both migrant patients and their healthcare providers. 
+      a(href="/resources").ui.button.primary.landingPic_button Find Resources
+      a(href="/QandA").ui.button.primary.landingPic_button Find an Answer to my Question
     img(src='/images/landingpage/landingpage_wave1.svg').landingPic_wave
+  .aboutUs
+    .aboutUs_text
+      .ui.grid.stackable.two.column.aboutUs_banner
+        .column
+          a.ui.fluid.card
+            .image
+              img(src='/images/landingpage/landingpage-2.jpg') 
+        .column 
+          a.ui.fluid.card
+            .image
+              img(src='/images/landingpage/landingpage-3.jpg')
   .aboutUs
     .aboutUs_text
       h1.boldText About Us
