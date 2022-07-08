@@ -8,67 +8,59 @@ block content
       h1.boldText.landingPic_title Migrant Patients
       p.landingPic_description Get updated and accurate resources about seeking healthcare in New York state (based on your legal immigration status) on this website. 
       //- p.landingPic_description(style="margin-top:0px") Information provided here is useful for both migrant patients and their healthcare providers. 
-      a(href="/resources").ui.button.primary.landingPic_button Find Resources
-      a(href="/QandA").ui.button.primary.landingPic_button Find an Answer to my Question
+      a(href="/resources").ui.button.primary.landingPic_button.button1 Explore Resources
+      a(href="/QandA").ui.button.primary.landingPic_button.button2 Find an Answer to my Question
     img(src='/images/landingpage/landingpage_wave1.svg').landingPic_wave
-  .aboutUs
-    .aboutUs_text
-      .ui.grid.stackable.two.column.aboutUs_banner
-        .column
+  .faqs
+    .faqs_text
+      h1.boldText.centerText Frequently Asked Questions
+      .ui.three.doubling.cards.faqs_banner.centered
           a.ui.fluid.card
-            .image
-              img(src='/images/landingpage/landingpage-2.jpg') 
-        .column 
+            img(src='/images/landingpage/landingpage-5.jpg')
+            p.centerText Public Benefits
           a.ui.fluid.card
-            .image
-              img(src='/images/landingpage/landingpage-3.jpg')
-  .aboutUs
-    .aboutUs_text
+            img(src='/images/landingpage/landingpage-4.jpg')
+            p.centerText COVID-19
+          a.ui.fluid.card
+            img(src='/images/landingpage/landingpage-2.jpg')
+            p.centerText Pregnancy        
+  .aboutUs 
+    .aboutUs_text 
       h1.boldText About Us
       .ui.grid.stackable.two.column.aboutUs_banner
-        .column
+        .column.justifyContent-center 
           p We are an interdisciplinary group of medical, digital, and social science researchers, immigration lawyers, and doctors from Cornell University and Weill Cornell Medicine.
-        .column 
-          p Our work focuses on identifying healthcare barriers that immigrants face and developing solutions to increase access to and engagement with healthcare benefits.
-  .ourPurpose 
-    .ourPurpose_text 
-      h1.boldText Our purpose 
-      .ui.grid.stackable.two.column.ourPurpose_banner
-        .column.ten.wide 
-          p RightsforHealth is a website containing accurate and updated information about the benefits available to immigrants and for which they are eligible based on their immigration status.
-          p Our goal is to make information about immigration policies and laws that impact immigrants’ eligibility to public benefits more accessible to patients and their healthcare providers.
-        .column.six.wide.justifyContent-center 
-          img(src='/images/landingpage/landingpage_icon1.svg')(width='100%')
+        .column.justifyContent-center 
+          img(src='/images/landingpage/aboutus.svg')(width='100%')
+        .column.justifyContent-center 
+          img(src='/images/landingpage/aboutus4.svg')(width='100%')
+        .column.justifyContent-center 
+          p We focus on (1) understanding the legal and health informational needs of immigrants in the U.S., and (2) developing solutions to increase their access to and engagement with healthcare benefits.
+  //- .ourPurpose 
+  //-   .ourPurpose_text 
+  //-     h1.boldText Our purpose 
+  //-     .ui.grid.stackable.two.column.ourPurpose_banner
+  //-       .column.ten.wide 
+  //-         p RightsforHealth is a website containing accurate and updated information about the benefits available to immigrants and for which they are eligible based on their immigration status.
+  //-         p Our goal is to make information about immigration policies and laws that impact immigrants’ eligibility to public benefits more accessible to patients and their healthcare providers.
+  //-       .column.six.wide.justifyContent-center 
+  //-         img(src='/images/landingpage/landingpage_icon1.svg')(width='100%')
   img(src='/images/landingpage/landingpage_wave2.svg').affiliations_wave
   .affiliations 
     .affiliations_text 
-      h1.boldText Affiliations 
-      .ui.grid.stackable.two.column.top.aligned.affiliations_banner
-        each affiliation in affiliationsInformation
-          .column.eight.wide
-            .ui.grid.stackable.two.column
-              .column.three.wide.justifyContent-center 
-                img(src=affiliation["icon_src"]).affiliations_icon
-              .column.thirteen.wide 
-                p 
-                  span.boldText #{affiliation["bold_text"]} 
-                  | #{affiliation["description"]}
+      .ui.grid.stackable.two.column.affiliations_banner
+        .column
+          h1.boldText The Challenge
+          p Currently, there is lack of clear and accurate information around accessing public benefits for U.S. immigrants has been shown to negatively affect their healthcare engagement. 
+          p We have identified 4 major challenges to finding and using currently avialable information sources: (1) informational uncertainty, (2) emotional barriers, (3) accessibility issues, and (4) contextual sensitivity.
+        .column
+          h1.boldText Our Goal
   img(src='/images/landingpage/landingpage_wave3.svg').faqs_wave
-  .faqs
-    .faqs_text
-      h1.boldText Frequently Asked Questions 
-      .ui.grid.stackable.two.column.faqs_banner
-        each faqs_section in faqsInformation
-          .column
-            a.ui.card.fluid.centered(href=faqs_section["link"])
-              .meta.center.aligned.faqs_card_content
-                img(src=faqs_section["icon_src"]).faqs_card_icon
-                h1 #{faqs_section["card_title"]}
-            each sublink_link, sublink_text in faqs_section["sub_links"]
-              a.faqs_link(href=sublink_link)
-                p #{sublink_text}
-                svg(width="35px", height="35px", viewBox="0 0 32 32", fill="none") 
-                  path(d="M10.3279 26.3453C9.93045 25.9557 9.89432 25.346 10.2195 24.9164L10.3279 24.7933L19.2979 16L10.3279 7.20674C9.93045 6.81714 9.89432 6.20748 10.2195 5.77787L10.3279 5.65479C10.7253 5.26519 11.3472 5.22978 11.7854 5.54854L11.9109 5.65479L21.6721 15.2241C22.0695 15.6137 22.1057 16.2233 21.7805 16.6529L21.6721 16.776L11.9109 26.3453C11.4738 26.7738 10.765 26.7738 10.3279 26.3453Z" fill="white")
+  .team
+    .team_text
+      h1.boldText Our Team 
+      .ui.grid.stackable.two.column.team_banner
+
 
 block styles 
   link(rel='stylesheet', href='/css/home.css')
