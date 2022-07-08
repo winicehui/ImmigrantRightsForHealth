@@ -17,7 +17,7 @@
 script. 
   $(window).on("load", function() {
     let pathArray = window.location.pathname.split('/');
-    const activeheaderLink = "/" + (pathArray[1] || 'home');
+    const activeheaderLink = "/" + (pathArray[1]);
     console.log(activeheaderLink);
-    $('a[href*="'+activeheaderLink+'"]').addClass('active');
+    $('a[href="'+activeheaderLink+'"]').addClass('active');
   });

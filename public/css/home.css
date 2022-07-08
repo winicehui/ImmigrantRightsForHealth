@@ -122,7 +122,7 @@
 }
 
 
-/* White Banner ("Our Purpose") CSS Definitions*/
+/* White Banner ("About Us") CSS Definitions*/
 
 .aboutUs {
     width: 100%;
@@ -149,15 +149,15 @@
 }
 
 
-/* Light Blue Banner ("Affiliations") CSS Definitions*/
+/* Light Blue Banner ("The Challenge/ Our Purpose") CSS Definitions*/
 
-.affiliations_wave {
+.ourPurpose_wave {
     width: 100%;
     display: block;
     background-color: #FFFFFF;
 }
 
-.affiliations {
+.ourPurpose {
     width: 100%;
     background-color: rgba(229, 243, 242, 0.5);
     color: #333333;
@@ -167,36 +167,29 @@
     padding: 6rem 0rem 5rem 0rem;
 }
 
-.affiliations_text {
+.ourPurpose_text {
     width: 70%;
     background-color: initial;
 }
 
-.affiliations_banner {
+.ourPurpose_banner {
     background-color: initial;
 }
 
-.affiliations_banner>.column,
-.affiliations_banner>.column>.ui.grid>.column {
+.ourPurpose_banner>.column {
     /* background-color: rgba(229, 243, 242, 0.5); */
     background-color: initial;
 }
 
-.affiliations_banner>.column>p {
+.ourPurpose_banner>.column>p {
     line-height: 30px;
     font-size: 20px;
 }
 
-.affiliations_icon {
-    margin: 10px 0px;
-    width: 51px;
-    height: 51px;
-}
 
+/* Medium Blue Banner ("ourTeam") CSS Definitions*/
 
-/* Medium Blue Banner ("FAQs") CSS Definitions*/
-
-.faqs_wave {
+.team_wave {
     width: 100%;
     display: block;
     background-color: rgba(229, 243, 242, 0.5);
@@ -204,41 +197,17 @@
 
 .team {
     width: 100%;
-    background-color: #375C83;
-    color: #FFFFFF;
+    background-color: #ffffff;
+    color: #333333;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0rem;
+    padding: 6rem 0rem 8rem 0rem;
 }
 
 .team_text {
-    width: 60%;
+    width: 80%;
     background-color: initial;
-}
-
-a.faqs_link {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.faqs_link>p {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 5px 0px;
-    line-height: inherit;
-}
-
-a.faqs_link svg {
-    margin: 2.5px;
-}
-
-a.faqs_link:hover svg path,
-a.faqs_link:hover {
-    color: #d9d9d9;
-    fill: #d9d9d9;
 }
 
 

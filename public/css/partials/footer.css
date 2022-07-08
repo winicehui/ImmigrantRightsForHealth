@@ -1,42 +1,33 @@
 .footer {
-    position: absolute;
-    bottom: 0;
-    height: 220px;
     width: 100%;
-    padding: 0 30px;
-    background-color: #26415E;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    align-content: flex-end;
-    text-align: end;
-}
-
-.footer>p {
-    margin: 0px;
-    font-size: 19px;
-    line-height: 1.5em;
+    padding: 5em 0em !important;
+    background-color: #26415E !important;
 }
 
 .emailLink {
-    color: #ffffff;
-    text-decoration: underline;
+    color: #298FFB;
 }
 
 .emailLink:hover {
-    text-decoration: underline;
     color: #ffffff;
 }
 
-.footer>.ui.grid>.column {
+.footer>.ui.container>.ui.grid>.column {
     background-color: #26415E;
     color: white;
 }
 
-.footer>.ui.grid>.column>p {
-    margin: 0px;
-    font-size: 19px;
-    line-height: 1.5em;
+.footer>.ui.container>.ui.grid>.column>p {
+    font-size: 20px;
+    line-height: normal;
+}
+
+.footer>.ui.container>.ui.grid>.column>p.privacy {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: normal;
+}
+
+i.icon.envelope.white {
+    margin-bottom: 5px;
 }

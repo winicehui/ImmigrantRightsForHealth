@@ -2,7 +2,13 @@
 
 /* ---- GENERAL ---- */
 
-* {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: 'Open Sans', sans-serif !important;
 }
 
@@ -26,7 +32,7 @@ div {
     justify-content: flex-start;
     align-items: center;
     margin: 90px 0px 0px 0px;
-    padding: 0px 0px 220px 0px;
+    /* padding: 0px 0px 220px 0px; */
 }
 
 .primaryColor {

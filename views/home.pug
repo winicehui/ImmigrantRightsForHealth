@@ -8,8 +8,12 @@ block content
       h1.boldText.landingPic_title Migrant Patients
       p.landingPic_description Get updated and accurate resources about seeking healthcare in New York state (based on your legal immigration status) on this website. 
       //- p.landingPic_description(style="margin-top:0px") Information provided here is useful for both migrant patients and their healthcare providers. 
-      a(href="/resources").ui.button.primary.landingPic_button.button1 Explore Resources
-      a(href="/QandA").ui.button.primary.landingPic_button.button2 Find an Answer to my Question
+      a(href="/resources").ui.button.primary.landingPic_button.button1 
+        i.search.icon.white 
+        | Explore Resources
+      a(href="/QandA").ui.button.primary.landingPic_button.button2 
+        i.comments.outline.icon 
+        | Find an Answer to my Question
     img(src='/images/landingpage/landingpage_wave1.svg').landingPic_wave
   .faqs
     .faqs_text
@@ -28,39 +32,43 @@ block content
     .aboutUs_text 
       h1.boldText About Us
       .ui.grid.stackable.two.column.aboutUs_banner
-        .column.justifyContent-center 
+        .column.justifyContent-center.alignItems-center 
           p We are an interdisciplinary group of medical, digital, and social science researchers, immigration lawyers, and doctors from Cornell University and Weill Cornell Medicine.
-        .column.justifyContent-center 
+          //- p We focus on (1) understanding the legal and health informational needs of immigrants in the U.S., and (2) developing solutions to increase their access to and engagement with healthcare benefits.
+        .column.justifyContent-center.alignItems-center  
           img(src='/images/landingpage/aboutus.svg')(width='100%')
-        .column.justifyContent-center 
-          img(src='/images/landingpage/aboutus4.svg')(width='100%')
-        .column.justifyContent-center 
+        .column.justifyContent-center.alignItems-center 
+          img(src='/images/landingpage/aboutus4.svg')(width='85%')
+        .column.justifyContent-center.alignItems-center
           p We focus on (1) understanding the legal and health informational needs of immigrants in the U.S., and (2) developing solutions to increase their access to and engagement with healthcare benefits.
-  //- .ourPurpose 
-  //-   .ourPurpose_text 
-  //-     h1.boldText Our purpose 
-  //-     .ui.grid.stackable.two.column.ourPurpose_banner
-  //-       .column.ten.wide 
-  //-         p RightsforHealth is a website containing accurate and updated information about the benefits available to immigrants and for which they are eligible based on their immigration status.
-  //-         p Our goal is to make information about immigration policies and laws that impact immigrants’ eligibility to public benefits more accessible to patients and their healthcare providers.
-  //-       .column.six.wide.justifyContent-center 
-  //-         img(src='/images/landingpage/landingpage_icon1.svg')(width='100%')
-  img(src='/images/landingpage/landingpage_wave2.svg').affiliations_wave
-  .affiliations 
-    .affiliations_text 
-      .ui.grid.stackable.two.column.affiliations_banner
+  img(src='/images/landingpage/landingpage_wave2.svg').ourPurpose_wave
+  .ourPurpose 
+    .ourPurpose_text 
+      .ui.grid.stackable.two.column.ourPurpose_banner
         .column
           h1.boldText The Challenge
-          p Currently, there is lack of clear and accurate information around accessing public benefits for U.S. immigrants has been shown to negatively affect their healthcare engagement. 
-          p We have identified 4 major challenges to finding and using currently avialable information sources: (1) informational uncertainty, (2) emotional barriers, (3) accessibility issues, and (4) contextual sensitivity.
+          p Currently, there is a lack of clear and accurate information on the public benefits that immigrants in the U.S. can access and digest. This lack consequently negatively affects immigrants' healthcare engagement. 
+          p Existing digital tools, such as websites and mobile applications, are a promising way to disseminate public benefits information, but there are still barriers and challenges immigrants face when finding and using them.
+          //- p But, there are still 4 key challenges immigrants face when finding and using currently available digital tools: (1) information uncertainty, (2) accessibility, (3) emotional barriers, and (4) contextual sensitivity. We aim to address these 4 challenges with RightsforHealth.
         .column
-          h1.boldText Our Goal
-  img(src='/images/landingpage/landingpage_wave3.svg').faqs_wave
+          h1.boldText Our Purpose
+          p Our goal is make information about immigration policies and laws that impact immigrants’ eligibility to public benefits more accessible to patients and their healthcare providers.
+          p 
+            span.italicText RightsforHealth 
+            | is a website containing accurate and updated information about the benefits available to immigrants based on their immigration status.
+  img(src='/images/landingpage/landingpage_wave4.svg').team_wave
   .team
     .team_text
       h1.boldText Our Team 
-      .ui.grid.stackable.two.column.team_banner
-
+      .ui.grid.stackable.four.column.team_banner
+          .column.justifyContent-center.alignItems-center 
+            img(src="/images/hril_logo.png")(width='100%')
+          .column.justifyContent-center.alignItems-center 
+            img(src="/images/cornelllawschool_logo.svg")(width='100%')
+          .column.justifyContent-center.alignItems-center 
+            img(src="/images/sml_logo.png")(width='80%')
+          .column.justifyContent-center.alignItems-center 
+            img(src="/images/brofenbrennercenter_logo.png")(width='80%')
 
 block styles 
   link(rel='stylesheet', href='/css/home.css')
