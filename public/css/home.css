@@ -51,10 +51,10 @@
 .landingPic_button {
     /* background-color: #375C83 !important; */
     font-family: inherit !important;
-    font-weight: 400 !important;
+    font-weight: 800 !important;
     font-size: 22px !important;
     margin: 0.2em 0.5em 0.5em 0 !important;
-    /* color: #000000 !important; */
+    color: #000000 !important;
 }
 
 .landingPic_button:hover {
@@ -95,6 +95,7 @@
 
 .faqs_text>h1 {
     color: white;
+    margin-bottom: 30px;
 }
 
 .faqs_banner {
