@@ -79,7 +79,8 @@
 
 .faqs {
     width: 100%;
-    background-color: #26415E !important;
+    /* background-color: #26415E !important; */
+    background-color: #375C83 !important;
     color: white;
     display: flex;
     justify-content: center;
@@ -97,7 +98,8 @@
 }
 
 .faqs_banner {
-    background-color: #26415E;
+    /* background-color: #26415E; */
+    background-color: #375C83;
 }
 
 .faqs_banner.ui.card>:first-child,
